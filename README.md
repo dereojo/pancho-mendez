@@ -26,3 +26,21 @@ Para entregarme el material, ideal que pudieses subirlo tú mismo a este reposit
 2. Necesitamos un dominio. Hablamos de uno ```.cl```
 3. Para el sitio inicial continué la línea gráfica del material que encontré en [Vimeo](https://vimeo.com/654743453).
 4. Todavía no hay material
+
+### Estructura de datos
+
+Propuesta de nota genérica:
+```
+{
+  "note": {
+    "title": "La opus casa",
+    "from": "1923",
+    "to": "1952",
+    "text": "La plaza, la casa, la taza, la masa, la pasa",
+    "video": "../videos/opus.mp4",
+    "img": "../images/opus54.jpg",
+    "p5": "../p5/sketch.js"
+  }
+}
+```
+se puede editar mejor en [este editor](https://beta5.objgen.com/json/local/design). 
