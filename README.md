@@ -17,3 +17,12 @@ Repositorio para el sitio del documental del arquitecto y pintor Francisco Ménd
 4. Todo el material anexo que consideres necesario
 
 Para entregarme el material, ideal que pudieses subirlo tú mismo a este repositorio, siguiendo las instrucciones. En caso de pánico, todavía existe el correo electrónico. Quedo atento.
+
+### Actualización: 17/11
+1. Hice una organización (dereojo) y dejé este repositorio alojado ahí. Esto hizo que cambiara su dirección:
+ 1. La irección de este reposuitorio (su revés como lenguaje): http://github.com/dereojo/documental-pancho-mendez
+ 2. La dirección de la página web (derivada del index *nuevo*): https:dereojo.github.io/documental-pancho-mendez
+ 3. El nombre del repositorio ´´´documental-pancho-mendez´´´ se puede cambiar, lo que cambiaría las direcciones más arriba. Se entiende le lógica, supongo
+2. Necesitamos un dominio. Hablamos de uno ´´´.cl´´´
+3. Para el sitio inicial continué la línea gráfica del material que encontré en [Vimeo](https://vimeo.com/654743453).
+4. Todavía no hay material
