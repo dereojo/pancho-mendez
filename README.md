@@ -11,7 +11,7 @@ Repositorio para el sitio del documental del arquitecto y pintor Francisco Ménd
 
 
 ### Material necesario para partir
-1. Un nombre del proyecto. Puede ser el título del documental
+1. Un nombre del proyecto. Puede ser el título del documental. 
 2. Una primera idea de los contenidos: textos y sus jerarquías
 3. Una colección de imágenes fundamentales
 4. Todo el material anexo que consideres necesario
