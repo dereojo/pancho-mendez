@@ -20,7 +20,7 @@ Para entregarme el material, ideal que pudieses subirlo tú mismo a este reposit
 
 ### Actualización: 17/11
 1. Hice una organización (dereojo) y dejé este repositorio alojado ahí. Esto hizo que cambiara su dirección:
- * La irección de este reposuitorio (su revés como lenguaje): http://github.com/dereojo/documental-pancho-mendez
+ * La dirección de este reposuitorio (su revés como lenguaje): http://github.com/dereojo/documental-pancho-mendez
  * La dirección de la página web (derivada del index *nuevo*): https:dereojo.github.io/documental-pancho-mendez
  * El nombre del repositorio ```documental-pancho-mendez``` se puede cambiar, lo que cambiaría las direcciones más arriba. Se entiende le lógica, supongo
 2. Necesitamos un dominio. Hablamos de uno ```.cl```
