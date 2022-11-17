@@ -4,13 +4,13 @@
  */
 
 
-let n = 25;
+let n = 202;
 let N;
 
 function setup() {
 let htmlElem = document.getElementById('p5');
 let w = htmlElem.offsetWidth;
-  let sketch = createCanvas(w, 700);
+  let sketch = createCanvas(w, windowHeight-10);
   sketch.parent("p5");
   N = [];
   for(let i = 0; i < n; i++){
@@ -20,12 +20,13 @@ let w = htmlElem.offsetWidth;
 
 class Note{
     constructor(){
+        this.w = 17;
         this.from = random(0, height/2);
-        this.to = random(this.from, height/2);
-        this.w = 10;
+        this.to = random(this.from + this.w, height/2);
         this.h = this.to - this.from;
-        this.x = random(width-this.w);
+        this.x = round(random(width/this.w))*this.w;
         this.y = random(height - this.h) + height;
+        this.step = random(.2, 1.2);
     }
 
     go(){
@@ -40,7 +41,7 @@ class Note{
     }
 
     move(){
-        this.y --;
+        this.y -= this.step;
     }
 }
 
