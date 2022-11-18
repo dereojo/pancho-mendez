@@ -44,3 +44,5 @@ Propuesta de nota genérica:
 }
 ```
 se puede editar mejor en [este editor](https://beta5.objgen.com/json/local/design). 
+
+ok.
