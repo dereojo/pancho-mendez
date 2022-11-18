@@ -4,7 +4,7 @@
  */
 
 
-let n = 202;
+let n = 99;
 let N;
 
 function setup() {
@@ -20,11 +20,11 @@ let w = htmlElem.offsetWidth;
 
 class Note{
     constructor(){
-        this.w = 17;
+        this.w = 11;
         this.from = random(0, height/2);
         this.to = random(this.from + this.w, height/2);
         this.h = this.to - this.from;
-        this.x = round(random(width/this.w))*this.w;
+        this.x = floor(random(width/this.w))*this.w;
         this.y = random(height - this.h) + height;
         this.step = random(.2, 1.2);
     }
