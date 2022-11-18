@@ -1,0 +1,29 @@
+/* https://jsonformatter.curiousconcept.com */
+
+{
+
+  "note": {
+    "title": "Francisco Méndez, pintura no albergada - Los Primeros Años",
+    "date": "1930",
+    "text": "La plaza, la casa, la taza, la masa, la pasa",
+    "video": "<iframe src='https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0' width='640' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+  },
+
+  "note": {
+    "title": "La opus casa",
+    "from": "1923",
+    "to": "1952",
+    "text": "La plaza, la casa, la taza, la masa, la pasa",
+    "video": "videos/opus.mp4",
+    "img": "images/opus54.jpg"
+
+  },
+  "note": {
+    "title": "La opus casa",
+    "from": "1923",
+    "to": "1952",
+    "text": "La plaza, la casa, la taza, la masa, la pasa",
+    "video": "videos/opus.mp4",
+    "img": "images/opus54.jpg"
+  }
+}
