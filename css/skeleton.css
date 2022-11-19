@@ -125,7 +125,13 @@ body {
   background-color: #E4752D;
   color: #FFFC; }
 
-
+nav{
+  position: absolute;
+  top:0;
+  left: .35ex;
+}
+nav li{list-style-type: none;display: inline-block;}
+nav li a{background-color: black; text-decoration: none; text-transform: uppercase; padding: 0 1ex;}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
