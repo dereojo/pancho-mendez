@@ -1051,4 +1051,57 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 .menu-wrap .menu nav#main-nav li a:hover {
   color: #f3fffd;
   text-shadow: none;
+}
+
+button {
+  float: right;
+  border: 3px solid #f3fffd;
+  color: #f3fffd;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 0;
+  font-weight: 100;
+}
+button span {
+  display: none;
+}
+button span:before {
+  display: block;
+  color: black;
+  content: "+";
+}
+button:hover {
+  background-color: rgba(32, 6, 34, 0.7803921569);
+  border-color: rgba(32, 6, 34, 0.7803921569);
+}
+
+#p5 {
+  position: relative;
+}
+
+.overlay {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  opacity: 0.75;
+}
+
+.vp-preview {
+  position: relative;
+  top: 25%;
+  left: 0;
+}
+
+#p5_loading {
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+#p5_loading span {
+  display: inline-block;
+  margin: 45% 0;
 }/*# sourceMappingURL=style.css.map */

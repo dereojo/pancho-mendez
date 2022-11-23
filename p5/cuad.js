@@ -11,9 +11,11 @@ let data;
 let notes;
 
 let content;
+let divP5;
+let acercaBtn;
 
 function preload() {
-  data = loadJSON("../data.json", gotData, 'json');
+  data = loadJSON("data.json", gotData, 'json');
 }
 
 function gotData(response) {
@@ -21,20 +23,28 @@ function gotData(response) {
   notes = [];
 }
 
-
-
 function setup() {
-  let htmlElem = document.getElementById('p5');
   content = document.getElementById('content');
-  print("content = ");
-  console.log(content);
-  let w = htmlElem.offsetWidth;
-  let sketch = createCanvas(w, windowHeight - 7);
-  sketch.parent("p5");
+  acercaBtn = document.getElementById('acerca-btn');
+  console.log({acercaBtn});
+  acercaBtn.onmousedown = function (){
+    let strings = loadStrings("acerca.html");
+    print("strings = " + strings);
+    print(strings)
+    print("length = "+strings.length);
+    document.getElementById('content').innerHTML = "";
+    for(let i = 0; i < strings.length; i++){
+      print(strings[i]);
+    }
+  };
   regen();
 }
 
 function regen() {
+  divP5 = document.getElementById('p5');
+  let w = divP5.offsetWidth;
+  let sketch = createCanvas(w, windowHeight - 7);
+  sketch.parent(divP5);
   N = [];
   for (let i = 0; i < n; i++) {
     N.push(new Note());
@@ -58,6 +68,7 @@ function buildNotes(data) {
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
+    n.image = data[key].img;
     n.text = data[key].text;
     n.index = num;
     notes.push(n);
@@ -75,7 +86,7 @@ class Note {
     this.h = this.to - this.from;
     this.x = floor(random(width / this.w)) * this.w;
     this.y = random(-this.h / 2, height);
-    this.step = random(.2, 1.2);
+    this.step = random(.1, .8);
     this.over = false;
     this.color = "#FFFA";
     this.colorOver = color(random(255), random(255), random(255));
@@ -136,10 +147,30 @@ function draw() {
 function mousePressed() {
   for (let n of notes) {
     if (n.over) {
-      document.getElementById("content").html = "Whatever";
       removeElements();
-      let newTitle = createElement('h1', n.title);
+      clearContent();
+      let newTitle = createElement('h2', n.title);
       newTitle.parent('content');
+      let newText = createElement('p', n.text);
+      newText.parent('content');
+      
+      if(n.video){
+        let videoElem = createDiv("<iframe class='overlay' src="+n.video+" width='100%' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
+        videoElem.parent(divP5);
+      }
+
+      if(n.image){
+        print("img = "+n.img);
+        let imageElem = createImg(n.image, n.title);
+        imageElem.parent(divP5);
+        imageElem.style('overflow-x', 'scroll');
+        imageElem.style('max-height', '50%');
+        select('img').class('overlay');
+      }
+
+      let closeBtn = createButton("<span>cerrar</span>");
+      closeBtn.parent('content');
+      closeBtn.mousePressed(clearContent);
     }
   }
 }
@@ -147,4 +178,10 @@ function mousePressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   regen();
+}
+
+function clearContent(){
+  console.log({content})
+  content.innerHTML = "";
+  removeElements();
 }
