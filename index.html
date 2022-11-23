@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Francisco Méndez Labbe</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description"
+    content="">
+  <meta name="author"
+    content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
 
   <!-- FONT (Adobe Futura)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://use.typekit.net/tze1hez.css">
+  <link rel="stylesheet"
+    href="https://use.typekit.net/tze1hez.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css"> 
+  <link rel="stylesheet"
+    href="scss/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon"
+    type="image/png"
+    href="images/favicon.png">
 
   <!-- Scripts
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,33 +40,50 @@
   <script src="p5/cuad.js"></script>
 
 </head>
+
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <div class="container" id="page">
-    <nav>
-      <li><a href="#">Pancho</a></li>
-      <li><a href="#">Obra</a></li>
-      <li><a href="#">Suma</a></li>
-    </nav>
+        <!-- menu start -->
+        <div class="menu-wrap">
+          <input type="checkbox"
+            class="toggler">
+          <div class="hamburger">
+            <div></div>
+          </div>
+          <section class="menu">
+            <nav id="main-nav">
+              <li><a href="#">Acerca de este proyecto</a></li>
+              <li><a href="#">Colabora</a></li>
+              <li><a href="#">Contacto</a></li>
+            </nav>
+          </section>
+        </div>
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
+      <div class="one-half column"
+        style="margin-top: 25%">
         <h1>Francisco Méndez Labbé</h1>
-        <p>Este proyecto da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.</p>
+        <p>Este proyecto da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el
+          paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación
+          a la arquitectura.</p>
 
         <dl>
           <dt>Proyecto en desarrollo</dt>
-          <dt>Realizado por <strong style="color:black">Xhinno Leiva</strong></dt>
+          <dt>Realizado por <strong>Xhinno Leiva</strong></dt>
           <dt>Producción: <a href="https://github.com/dereojo/pancho-mendez">dereojo comunicaciones</a></dt>
         </dl>
       </div>
-      <div class="one-half column" id="p5">
-        
+      <div class="one-half column"
+        id="p5">
+
       </div>
     </div>
   </div>
 
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>

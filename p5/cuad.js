@@ -6,6 +6,15 @@
 
 let n = 222;
 let N;
+let data;
+
+function preload(){
+  data = loadJSON("../data.json", gotData, 'json');
+}
+
+function gotData(response) {
+  print("gotData!");
+}
 
 function setup() {
 let htmlElem = document.getElementById('p5');
@@ -44,7 +53,7 @@ class Note{
         rect(this.x, this.y, this.w, this.h);
 
         if(this.over){
-          stroke(this.color);//stroke("#E4752D");
+          stroke(this.color);
           strokeWeight(this.w/2);
           // line(this.x - this.w/4, this.y, this.x - this.w/4, this.y+this.h);
           noFill();

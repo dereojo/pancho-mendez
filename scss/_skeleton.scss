@@ -122,16 +122,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Futura PT", "Futura", "Century Gothic", sans-serif;
-  background-color: #E4752D;
-  color: #FFFC; }
+  background-color:$color-orange;
+  color: $color-white; }
 
-nav{
-  position: absolute;
-  top:0;
-  left: .35ex;
-}
-nav li{list-style-type: none;display: inline-block;}
-nav li a{background-color: black; text-decoration: none; text-transform: uppercase; padding: 0 1ex;}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
