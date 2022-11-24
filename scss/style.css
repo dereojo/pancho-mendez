@@ -1095,17 +1095,16 @@ button::before {
 }
 
 .img-overlay {
+  text-align: center;
   position: absolute;
   top: 25%;
-  left: 0;
+  left: -25vw;
   right: 0;
-  opacity: 0.75;
-  max-height: 50vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  opacity: 0.85;
+  max-height: 60vh;
 }
 .img-overlay img {
-  max-height: 48vh;
+  max-height: 60vh;
 }
 
 .vp-preview {

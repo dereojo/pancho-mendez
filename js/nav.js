@@ -4,6 +4,7 @@
  * 
  */
 
+const FRICTION = 0.0023;
 
 let n = 222; // cantidad de elementos
 let globalWidth = 3; // ancho
@@ -16,9 +17,16 @@ let divP5; // div de esta nav: lado derecho
 let acercaBtn, colaboraBtn, contactoBtn;
 let font;
 
+let colorPal;
+
+function getCol(img){
+  return img.get(round(random(img.width)), round(random(img.height)));
+}
+
 function preload() {
   data = loadJSON("data.json", gotData, 'json');
   font = loadFont("data/Jost-Medium.ttf");
+  colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
 }
 
 function gotData(response) {
@@ -29,19 +37,6 @@ function gotData(response) {
 function setup() {
   content = document.getElementById('content');
   acercaBtn = document.getElementById('acerca-btn');
-  /*
-   console.log({acercaBtn});
-   acercaBtn.onmousedown = function (){
-     let strings = loadStrings("acerca.html");
-     print("strings = " + strings);
-     print(strings)
-     print("length = "+strings.length);
-     document.getElementById('content').innerHTML = "";
-     for(let i = 0; i < strings.length; i++){
-       print(strings[i]);
-     }
-   };
-   */
   regen();
 }
 
@@ -68,8 +63,12 @@ function buildNotes(data) {
     n.w = globalWidth * 2;
     n.x = round(random(width / n.w) * n.w);
     n.h = random(30, 60);
-    n.colorOver = color(0);
-    n.color = color(0, 190);
+    if(!data[key].img && !data[key].title){
+      n.colorOver = color(0);
+      n.color = getCol(colorPal);
+    }else{
+      n.color = color(0);
+    }
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
@@ -77,6 +76,7 @@ function buildNotes(data) {
     n.text = data[key].text;
     n.index = num;
     n.hasData = true;
+    n.step *= 0.333;
     notes.push(n);
   }
   console.log({
@@ -149,14 +149,18 @@ function draw() {
       textLeading(fontSize * .85);
       fill(0, 200);
       if (n.x < width / 2) {
-
         textAlign(LEFT);
         text(n.title, n.x + textMargin, n.y + fontSize, width - n.x - textMargin * 2, 100);
       } else {
         textAlign(RIGHT);
         text(n.title, 0, n.y + fontSize, n.x - textMargin, 100);
       }
-
+      if(mouseIsPressed){
+        let diffx = mouseX - n.x;
+        let diffy = mouseY - n.y;
+        n.x += diffx * FRICTION;
+        n.y += diffy * FRICTION;
+      }
     }
   }
 }
