@@ -64,3 +64,11 @@ $color-white: #f3fffd;
         position: relative;
     }
 }
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+    .img-overlay{left: -25vw;}
+    
+
+}

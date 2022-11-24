@@ -136,7 +136,6 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 
 button{
     position: absolute;
-    left: -40px;
     top: 10px;
     border: 2.5px solid $color-white;
     color: $color-white;
@@ -161,4 +160,11 @@ button{
         content: "+";
         transform: rotate(45deg);
     }
+}
+
+@media (min-width: 550px) {
+
+    .img-overlay{left: -25vw;}
+    button{left: -46px;}
+
 }
