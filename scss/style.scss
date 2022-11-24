@@ -16,34 +16,6 @@ $color-white: #f3fffd;
 @import "skeleton";
 @import "menu";
 
-button{
-    position: absolute;
-    right: 0;
-    top: 10px;
-    border: 2.5px solid $color-white;
-    color: $color-white;
-    font-size: 32px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 0;
-    line-height: 0;
-    font-weight: 100;
-    opacity: 0.33;
-    span{
-        display: none;
-    }
-    &:hover{
-        opacity: 1;
-        border: 2.5px solid $color-white;
-    }
-    &::before{
-        display: block;
-        color: $color-white;
-        content: "+";
-        transform: rotate(45deg);
-    }
-}
 
 #p5{
     position: relative;

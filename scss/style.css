@@ -1055,7 +1055,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 
 button {
   position: absolute;
-  right: 0;
+  left: -40px;
   top: 10px;
   border: 2.5px solid #f3fffd;
   color: #f3fffd;
