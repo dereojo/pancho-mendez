@@ -23,7 +23,7 @@ $color-white: #f3fffd;
 .vid-overlay{
     display: inline-block;
     position: absolute;
-    top: 25%;
+    top: 10vh;
     left: 0;
     opacity: .75;
 }
@@ -31,14 +31,14 @@ $color-white: #f3fffd;
 .img-overlay{
     text-align: center;
     position: absolute;
-    top:25%;
+    top:10vh;
     left: -25vw;
     right: 0;
     opacity: .85;
     max-height: 60vh;
     
     img{
-        max-height: 60vh;
+        max-height: 75vh;
     }
     
 }

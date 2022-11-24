@@ -824,7 +824,7 @@ code {
   margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
+  background: transparent;
   border: 1px solid #E1E1E1;
   border-radius: 4px;
 }
@@ -1089,7 +1089,7 @@ button::before {
 .vid-overlay {
   display: inline-block;
   position: absolute;
-  top: 25%;
+  top: 10vh;
   left: 0;
   opacity: 0.75;
 }
@@ -1097,14 +1097,14 @@ button::before {
 .img-overlay {
   text-align: center;
   position: absolute;
-  top: 25%;
+  top: 10vh;
   left: -25vw;
   right: 0;
   opacity: 0.85;
   max-height: 60vh;
 }
 .img-overlay img {
-  max-height: 60vh;
+  max-height: 75vh;
 }
 
 .vp-preview {
