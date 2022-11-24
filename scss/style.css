@@ -1054,40 +1054,58 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 }
 
 button {
-  float: right;
-  border: 3px solid #f3fffd;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border: 2.5px solid #f3fffd;
   color: #f3fffd;
   font-size: 32px;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   padding: 0;
   line-height: 0;
   font-weight: 100;
+  opacity: 0.33;
 }
 button span {
   display: none;
 }
-button span:before {
-  display: block;
-  color: black;
-  content: "+";
-}
 button:hover {
-  background-color: rgba(32, 6, 34, 0.7803921569);
-  border-color: rgba(32, 6, 34, 0.7803921569);
+  opacity: 1;
+  border: 2.5px solid #f3fffd;
+}
+button::before {
+  display: block;
+  color: #f3fffd;
+  content: "+";
+  transform: rotate(45deg);
 }
 
 #p5 {
   position: relative;
 }
 
-.overlay {
+.vid-overlay {
   display: inline-block;
   position: absolute;
   top: 25%;
   left: 0;
   opacity: 0.75;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+  max-height: 50vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.img-overlay img {
+  max-height: 48vh;
 }
 
 .vp-preview {
@@ -1104,4 +1122,11 @@ button:hover {
 #p5_loading span {
   display: inline-block;
   margin: 45% 0;
+}
+
+.row {
+  position: relative;
+}
+.row .column {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

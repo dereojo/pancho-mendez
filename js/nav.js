@@ -1,21 +1,24 @@
 /**
  *
- * navv
+ * pancho méndez nav por hspencer
+ * 
  */
 
 
-let n = 222;
-let globalWidth = 3;
-let N;
-let data;
-let notes;
+let n = 222; // cantidad de elementos
+let globalWidth = 3; // ancho
+let N; // arreglo global de elementos
+let data; // objeto de datos
+let notes; // arreglo a partir de los datos
 
-let content;
-let divP5;
-let acercaBtn;
+let content; // div del contenido: lado izquierso
+let divP5; // div de esta nav: lado derecho
+let acercaBtn, colaboraBtn, contactoBtn;
+let font;
 
 function preload() {
   data = loadJSON("data.json", gotData, 'json');
+  font = loadFont("data/Jost-Medium.ttf");
 }
 
 function gotData(response) {
@@ -26,17 +29,19 @@ function gotData(response) {
 function setup() {
   content = document.getElementById('content');
   acercaBtn = document.getElementById('acerca-btn');
-  console.log({acercaBtn});
-  acercaBtn.onmousedown = function (){
-    let strings = loadStrings("acerca.html");
-    print("strings = " + strings);
-    print(strings)
-    print("length = "+strings.length);
-    document.getElementById('content').innerHTML = "";
-    for(let i = 0; i < strings.length; i++){
-      print(strings[i]);
-    }
-  };
+  /*
+   console.log({acercaBtn});
+   acercaBtn.onmousedown = function (){
+     let strings = loadStrings("acerca.html");
+     print("strings = " + strings);
+     print(strings)
+     print("length = "+strings.length);
+     document.getElementById('content').innerHTML = "";
+     for(let i = 0; i < strings.length; i++){
+       print(strings[i]);
+     }
+   };
+   */
   regen();
 }
 
@@ -60,17 +65,18 @@ function buildNotes(data) {
     let cant = data.length;
     let th = round(random(cant - 1));
     let n = N[num];
-    n.x = (width / 10) * 1;
-    n.w = (width / 10) * 8;
-    n.h = 99;
-    n.colorOver = color(0, 140);
-    n.color = color(0, 30);
+    n.w = globalWidth * 2;
+    n.x = round(random(width / n.w) * n.w);
+    n.h = random(30, 60);
+    n.colorOver = color(0);
+    n.color = color(0, 190);
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
     n.image = data[key].img;
     n.text = data[key].text;
     n.index = num;
+    n.hasData = true;
     notes.push(n);
   }
   console.log({
@@ -91,6 +97,7 @@ class Note {
     this.color = "#FFFA";
     this.colorOver = color(random(255), random(255), random(255));
     this.title = "";
+    this.hasData = false;
   }
 
   go() {
@@ -129,17 +136,27 @@ class Note {
 function draw() {
   clear();
   for (let n of N) {
-    n.go();
+    if (!n.hasData) n.go();
   }
 
   for (let n of notes) {
+    n.go();
     if (n.over) {
-      let fontSize = 19;
-      let textMargin = 13
-      textFont("Futura PT");
+      let fontSize = 18;
+      let textMargin = 15
+      textFont(font);
       textSize(fontSize);
-      fill("#FFF");
-      text(n.title, n.x + textMargin, n.y + textMargin, width * .68, 200);
+      textLeading(fontSize * .85);
+      fill(0, 200);
+      if (n.x < width / 2) {
+
+        textAlign(LEFT);
+        text(n.title, n.x + textMargin, n.y + fontSize, width - n.x - textMargin * 2, 100);
+      } else {
+        textAlign(RIGHT);
+        text(n.title, 0, n.y + fontSize, n.x - textMargin, 100);
+      }
+
     }
   }
 }
@@ -153,19 +170,16 @@ function mousePressed() {
       newTitle.parent('content');
       let newText = createElement('p', n.text);
       newText.parent('content');
-      
-      if(n.video){
-        let videoElem = createDiv("<iframe class='overlay' src="+n.video+" width='100%' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
+
+      if (n.video) {
+        let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
         videoElem.parent(divP5);
       }
 
-      if(n.image){
-        print("img = "+n.img);
-        let imageElem = createImg(n.image, n.title);
+      if (n.image) {
+        print("img = " + n.img);
+        let imageElem = createDiv("<div class='img-overlay'><img src="+n.image+" title="+n.title+" /></div>");
         imageElem.parent(divP5);
-        imageElem.style('overflow-x', 'scroll');
-        imageElem.style('max-height', '50%');
-        select('img').class('overlay');
       }
 
       let closeBtn = createButton("<span>cerrar</span>");
@@ -180,8 +194,10 @@ function windowResized() {
   regen();
 }
 
-function clearContent(){
-  console.log({content})
+function clearContent() {
+  console.log({
+    content
+  })
   content.innerHTML = "";
   removeElements();
 }
