@@ -3,7 +3,7 @@ Repositorio para el sitio del documental del arquitecto y pintor Francisco Ménd
 
 ## franciscomendezlabbe.cl
 1. [FML]("http://franciscomendezlabbe.cl"). 
-2. Estructura de datos 
+2. Estructura de <code>data.json</code>
 
 ```
 {
