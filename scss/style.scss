@@ -25,7 +25,7 @@ $color-white: #f3fffd;
     position: absolute;
     top: 10vh;
     left: 0;
-    opacity: .75;
+    opacity: .95;
 }
 
 .img-overlay{
@@ -34,14 +34,60 @@ $color-white: #f3fffd;
     top:10vh;
     left: -25vw;
     right: 0;
-    opacity: .85;
+    opacity: .95;
     max-height: 60vh;
     
     img{
         max-height: 75vh;
+        filter: invert(0%);
+        transition: ease all 1s;
+        &:hover{
+            mix-blend-mode: multiply;
+            filter: invert(100%);
+        }
     }
-    
 }
+
+
+button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: $color-white;
+    font-size: 32px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0 !important;
+    padding: 0;
+    line-height: 0;
+    font-weight: 100;
+    span{
+        display: none;
+    }
+    &:hover{
+       background-color: $color-white;
+       &::before{
+        color: $color-orange;
+       }
+    }
+    &::before{
+        display: block;
+        color: $color-white;
+        content: "+";
+        transform: rotate(45deg);
+    }
+}
+
+@media (min-width: 550px) {
+
+    .img-overlay{left: -25vw;}
+    button{left: 0; // -2ex;
+            top: 0; //-9.4vh;
+    }
+
+}
+
 .vp-preview {
     position: relative;
     top: 25%;

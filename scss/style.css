@@ -1020,16 +1020,9 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   visibility: hidden;
   opacity: 0;
   background-color: rgba(228, 117, 45, 0.5);
-  /*
-  .navs-wrap {
-      transform: translateY(-50vh);
-      flex: none;
-      transition: all 0.4s ease;
-   */
 }
 .menu-wrap .menu nav {
   width: 100%;
-  /* } */
 }
 .menu-wrap .menu nav#main-nav {
   transform: translateY(-200px);
@@ -1053,26 +1046,59 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   text-shadow: none;
 }
 
-button {
+#p5 {
+  position: relative;
+}
+
+.vid-overlay {
+  display: inline-block;
   position: absolute;
+  top: 10vh;
+  left: 0;
+  opacity: 0.95;
+}
+
+.img-overlay {
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: -25vw;
+  right: 0;
+  opacity: 0.95;
+  max-height: 60vh;
+}
+.img-overlay img {
+  max-height: 75vh;
+  filter: invert(0%);
+  transition: ease all 1s;
+}
+.img-overlay img:hover {
+  mix-blend-mode: multiply;
+  filter: invert(100%);
+}
+
+button {
+  position: fixed;
   top: 10px;
-  border: 2.5px solid #f3fffd;
+  left: 10px;
   color: #f3fffd;
   font-size: 32px;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border: none;
+  border-radius: 0 !important;
   padding: 0;
   line-height: 0;
   font-weight: 100;
-  opacity: 0.33;
 }
 button span {
   display: none;
 }
 button:hover {
-  opacity: 1;
-  border: 2.5px solid #f3fffd;
+  background-color: #f3fffd;
+}
+button:hover::before {
+  color: #E4752D;
 }
 button::before {
   display: block;
@@ -1086,34 +1112,10 @@ button::before {
     left: -25vw;
   }
   button {
-    left: -46px;
+    left: 0;
+    top: 0;
   }
 }
-#p5 {
-  position: relative;
-}
-
-.vid-overlay {
-  display: inline-block;
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  opacity: 0.75;
-}
-
-.img-overlay {
-  text-align: center;
-  position: absolute;
-  top: 10vh;
-  left: -25vw;
-  right: 0;
-  opacity: 0.85;
-  max-height: 60vh;
-}
-.img-overlay img {
-  max-height: 75vh;
-}
-
 .vp-preview {
   position: relative;
   top: 25%;

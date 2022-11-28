@@ -2,12 +2,13 @@
 Este meú está:
 url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 */
-        
+
 .menu-wrap {
-    
+
     position: absolute;
     z-index: 10;
     width: 100%;
+
     .toggler {
         z-index: 21;
         position: absolute;
@@ -17,19 +18,22 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
         height: $nav-block-size * 2;
         border: 0;
         opacity: 0;
-                        
-        &:checked{
+
+        &:checked {
+
             /* rotate on hover */
-            &:hover + .hamburger > div {
+            &:hover+.hamburger>div {
                 transform: rotate(45deg);
             }
 
             /* hamburger amination to x */
-            + .hamburger {
+            +.hamburger {
                 background-color: transparent;
                 transition: background-color 10ms ease;
+
                 >div {
                     transform: rotate(45deg);
+
                     &:before,
                     &:after {
                         top: 0;
@@ -43,14 +47,16 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
                 transition: all 1s ease;
                 visibility: visible;
                 opacity: 100;
+
                 >#main-nav {
                     transform: translateY(0);
                 }
-            
+
             }
         }
 
     }
+
     .hamburger {
         z-index: 20;
         position: absolute;
@@ -64,7 +70,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
         align-items: center;
         justify-content: center;
         transition: background-color .5s ease-in;
-        
+
         /* hambuerger lines */
         >div {
             position: relative;
@@ -75,6 +81,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease;
+
             &:before,
             &:after {
                 content: '';
@@ -84,11 +91,13 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
                 height: 2px;
                 background: inherit;
             }
+
             &:after {
                 top: 7px;
             }
         }
     }
+
     .menu {
         position: relative;
         width: 100%;
@@ -96,75 +105,35 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
         visibility: hidden;
         opacity: 0;
         background-color: transparentize($color-orange, .5);
-        /*
-        .navs-wrap {
-            transform: translateY(-50vh);
-            flex: none;
-            transition: all 0.4s ease;
-         */
-            nav {
-                
-                width: 100%;
-                
-                &#main-nav {
-                    transform: translateY(-200px);
-                    display: flex;
-                    justify-content: space-evenly;
-                    li{
-                        list-style-type: none;
-            
-                        a{
-                            position: relative;
-                            text-transform: uppercase;
-                            text-decoration: none;
-                            color: $color-dark;
-                            font-weight: 600;
-                            display: inline-block;
-                            transition: all .5s ease;
-                            &:hover{
-                                color: $color-white;
-                                text-shadow: none;
-                            }
+
+        nav {
+
+            width: 100%;
+
+            &#main-nav {
+                transform: translateY(-200px);
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        position: relative;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $color-dark;
+                        font-weight: 600;
+                        display: inline-block;
+                        transition: all .5s ease;
+
+                        &:hover {
+                            color: $color-white;
+                            text-shadow: none;
                         }
                     }
                 }
-           /* } */
+            }
         }
     }
-}
-
-
-button{
-    position: absolute;
-    top: 10px;
-    border: 2.5px solid $color-white;
-    color: $color-white;
-    font-size: 32px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 0;
-    line-height: 0;
-    font-weight: 100;
-    opacity: 0.33;
-    span{
-        display: none;
-    }
-    &:hover{
-        opacity: 1;
-        border: 2.5px solid $color-white;
-    }
-    &::before{
-        display: block;
-        color: $color-white;
-        content: "+";
-        transform: rotate(45deg);
-    }
-}
-
-@media (min-width: 550px) {
-
-    .img-overlay{left: -25vw;}
-    button{left: -46px;}
-
 }
