@@ -1079,8 +1079,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 
 button {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 2.75ex;
   color: #f3fffd;
   font-size: 32px;
   width: 30px;
@@ -1090,6 +1089,7 @@ button {
   padding: 0;
   line-height: 0;
   font-weight: 100;
+  margin-left: 0.47ex;
 }
 button span {
   display: none;
@@ -1103,17 +1103,15 @@ button:hover::before {
 button::before {
   display: block;
   color: #f3fffd;
+  font-size: 1.62em;
   content: "+";
+  background-color: fuchsia;
   transform: rotate(45deg);
 }
 
 @media (min-width: 550px) {
   .img-overlay {
     left: -25vw;
-  }
-  button {
-    left: 0;
-    top: 0;
   }
 }
 .vp-preview {
