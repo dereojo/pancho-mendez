@@ -1,12 +1,12 @@
 /**
  *
- * pancho méndez nav por hspencer
+ * pancho méndez "nav" alias la cascada inversa - por hspencer
  * 
  */
 
 const FRICTION = 0.0023;
 
-let n = 222; // cantidad de elementos
+let n = 380; // cantidad de elementos
 let globalWidth = 3; // ancho
 let N; // arreglo global de elementos
 let data; // objeto de datos
@@ -55,7 +55,7 @@ function regen() {
 }
 
 function buildNotes(data) {
-  for (let key in data) {
+  for (let key in data.datos) {
     let num = round(random(N.length - 1));
     let cant = data.length;
     let th = round(random(cant - 1));
@@ -63,25 +63,20 @@ function buildNotes(data) {
     n.w = globalWidth * 2;
     n.x = round(random(width / n.w) * n.w);
     n.h = random(30, 60);
-    if(!data[key].img && !data[key].title){
-      n.colorOver = color(0);
-      n.color = getCol(colorPal);
-    }else{
-      n.color = color(0);
-    }
+    n.color = color(0);
+    n.colorOver = color("red");
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
     n.image = data[key].img;
     n.text = data[key].text;
+    n.cat = data[key].cat;
     n.index = num;
     n.hasData = true;
     n.step *= 0.333;
     notes.push(n);
   }
-  console.log({
-    notes
-  });
+  console.log({notes});
 }
 
 class Note {
@@ -95,8 +90,9 @@ class Note {
     this.step = random(.1, .8);
     this.over = false;
     this.color = "#FFFA";
-    this.colorOver = color(random(255), random(255), random(255));
+    this.colorOver = this.color;
     this.title = "";
+    this.cat = "",
     this.hasData = false;
   }
 
