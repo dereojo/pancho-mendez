@@ -18,23 +18,52 @@ $color-white: #f3fffd;
 .pancho{
     mix-blend-mode: multiply;
     transition: all ease-out 1s; 
-    filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
+    filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
+    
     max-width: 100%;
+    border-radius: 20px;
     &:hover{
-        filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
+        filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
     }
 }
 
-input[type="checkbox"] {
-    position: relative;
-    width: 1em;
-    height: 1em;
-    border: 1px solid gray;
-    /* Adjusts the position of the checkboxes on the text baseline */
-    vertical-align: -2px;
-    /* Set here so that Windows' High-Contrast Mode can override */
-    color: green;
-  }
+#main{
+    min-height: 100vh;
+} 
+/* párrafo selector con los checkboxes para filtrar */
+.selector{
+    div{
+        display: inline-block;
+        label{
+            font-weight: normal;
+        
+            input[type="checkbox"] {
+                position: relative;
+                width: 1em;
+                height: 1em;
+                vertical-align: -2px;
+                margin-right: 1ex;
+            }
+
+            span{
+                &::before{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    background-color: #eee;
+                    border-radius: 4px
+                }
+            }
+        }
+    }
+}
+
+#content{
+    margin-top: 3em;
+}
 
 #p5{
     position: relative;
@@ -104,8 +133,6 @@ button{
 @media (min-width: 550px) {
 
     .img-overlay{left: -25vw;}
-    button{ }
-
 }
 
 .vp-preview {

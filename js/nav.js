@@ -4,17 +4,15 @@
  * 
  */
 
-const FRICTION = 0.0023;
+// const FRICTION = 0.0023;
 
 let n = 380; // cantidad de elementos
-let globalWidth = 3; // ancho
+let globalWidth = 6; // ancho
 let N; // arreglo global de elementos
 let data; // objeto de datos
 let notes; // arreglo a partir de los datos
 
-let content; // div del contenido: lado izquierso
-let divP5; // div de esta nav: lado derecho
-let acercaBtn, colaboraBtn, contactoBtn;
+let toggleARQ, togglePIN, toggleDIB, toggleVID, toggleFOT;
 let font;
 
 let colorPal;
@@ -35,15 +33,71 @@ function gotData(response) {
 }
 
 function setup() {
-  content = document.getElementById('content');
-  acercaBtn = document.getElementById('acerca-btn');
+  toggleARQ = createCheckbox('Arquitecto', false);
+  togglePIN = createCheckbox('pintor', false);
+  toggleDIB = createCheckbox('artista gráfico', false);
+  toggleVID = createCheckbox('profesor de arquitectura y diseño', false);
+  toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', false);
+  toggleARQ.parent(document.getElementById('ARQ'));
+  togglePIN.parent(document.getElementById('PIN'));
+  toggleDIB.parent(document.getElementById('DIB'));
+  toggleVID.parent(document.getElementById('VID'));
+  toggleFOT.parent(document.getElementById('FOT'));
+  toggleARQ.changed(toggle);
+  togglePIN.changed(toggle);
+  toggleDIB.changed(toggle);
+  toggleVID.changed(toggle);
+  toggleFOT.changed(toggle);
   regen();
 }
 
+function toggle(){
+  print("toggleARQ = "+toggleARQ.checked());
+  print("togglePIN = "+togglePIN.checked());
+  print("toggleDIB = "+toggleDIB.checked());
+  print("toggleVID = "+toggleVID.checked());
+  print("toggleFOT = "+toggleFOT.checked());
+
+  for(n in notes){
+    if(toogleARQ.checked() && n.cat === 'arquitectura'){
+      n.color = color("DeepSkyBlue");
+      n.colorOver = color("SkyBlue");
+    }else{
+      n.color = color(0);
+      n.colorOver = color("white");
+    }
+  }
+  /*
+  if(toggleARQ.value())
+    case "FOT":
+      n.color = color(0);
+      n.colorOver = color("red");
+      break;
+    case "PIN":
+      n.color = color("DeepPink");
+      n.colorOver = color("red");
+      break;
+    case "VID":
+      n.color = color("cyan");
+      n.colorOver = color("blue");
+      break;
+    case "DIB":
+      n.color = color("OrangeRed");
+      n.colorOver = color("red");
+      break;
+    case "ARQ":
+      n.color = color("DeepSkyBlue");
+      n.colorOver = color("SkyBlue");
+      break;
+  }*/
+}
+
 function regen() {
-  divP5 = document.getElementById('p5');
+  let divP5 = document.getElementById('p5');
+  let divMain = document.getElementById('main');
   let w = divP5.offsetWidth;
-  let sketch = createCanvas(w, windowHeight - 7);
+  let h = divMain.offsetHeight;
+  let sketch = createCanvas(w, h);
   sketch.parent(divP5);
   N = [];
   for (let i = 0; i < n; i++) {
@@ -63,8 +117,6 @@ function buildNotes(data) {
     n.w = globalWidth * 2;
     n.x = round(random(width / n.w) * n.w);
     n.h = random(30, 60);
-    n.color = color(0);
-    n.colorOver = color("red");
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
@@ -74,6 +126,29 @@ function buildNotes(data) {
     n.index = num;
     n.hasData = true;
     n.step *= 0.333;
+
+    switch(n.cat){
+      case "foto":
+        n.color = color(0);
+        n.colorOver = color("red");
+        break;
+      case "pintura":
+        n.color = color("DeepPink");
+        n.colorOver = color("red");
+        break;
+      case "video":
+        n.color = color("cyan");
+        n.colorOver = color("blue");
+        break;
+      case "dibujo":
+        n.color = color("OrangeRed");
+        n.colorOver = color("red");
+        break;
+      case "arquitectura":
+        n.color = color("DeepSkyBlue");
+        n.colorOver = color("SkyBlue");
+        break;
+    }
     notes.push(n);
   }
   console.log({notes});
@@ -151,12 +226,14 @@ function draw() {
         textAlign(RIGHT);
         text(n.title, 0, n.y + fontSize, n.x - textMargin, 100);
       }
+      /*
       if(mouseIsPressed){
         let diffx = mouseX - n.x;
         let diffy = mouseY - n.y;
         n.x += diffx * FRICTION;
         n.y += diffy * FRICTION;
       }
+      */
     }
   }
 }
