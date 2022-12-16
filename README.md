@@ -33,14 +33,15 @@ Propuesta de nota genérica:
 ```
 {
   "note": {
-    "title": "La opus casa",
-    "from": "1923",
-    "to": "1952",
-    "text": "La plaza, la casa, la taza, la masa, la pasa",
+    "title": "El título se muestra como un encabezado (h2)",
+    "date": "1957",
+    "text": "descripción del artefacto, puede incluir html",
     "video": "../videos/opus.mp4",
-    "img": "../images/opus54.jpg",
-    "p5": "../p5/sketch.js"
+    "img": "../images/opus54.jpg"
+    "cat": "pintura"
   }
 }
 ```
-se puede editar mejor en [este editor](https://beta5.objgen.com/json/local/design). 
+
+- se puede editar mejor en [este editor](https://beta5.objgen.com/json/local/design). 
+- herramienta para convertir XLS a JSON: https://beautifytools.com/excel-to-json-converter.php
