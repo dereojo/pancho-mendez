@@ -1,4 +1,4 @@
-﻿[{
+[{
     "date": "1928",
     "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_002_1928.jpg",
     "cat": "foto"
@@ -315,225 +315,220 @@
     "date": "1970",
     "text": "Cortometraje FML MNBA 01 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
     "video": "https://player.vimeo.com/video/654743453?h=e0c6449117&color=050505&title=0&byline=0&portrait=0",
-    "cat": "video"
-}, {
+    "img": ""
+  },
+
+  "Pintura no albergada 2": {
     "title": "Talleres de Murales: los primeros años",
     "date": "1970",
     "text": "Cortometraje FML MNBA 02 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
-    "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0"
-}, {
-    "date": "1972",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_020_1972.jpg",
-    "cat": "foto"
-}, {
-    "date": "1972",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_021_1972.jpg",
-    "cat": "foto"
-}, {
-    "date": "1973",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_048_1973.jpg",
-    "cat": "foto"
-}, {
-    "date": "1981",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_046_1981.jpg",
-    "cat": "foto"
-}, {
-    "date": "1982",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_047_1982.jpg",
-    "cat": "foto"
-}, {
-    "date": "1982",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_049_1982.jpg",
-    "cat": "foto"
-}, {
+    "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0",
+    "img": ""
+  },
+
+  "Escuela Naval 1": {
+    "title": "Escuela Naval",
+    "date": "1956",
+    "text": "Croquis de la escuela naval",
+    "video": "",
+    "img": "images/fml_cadete/mnba/fml_cadete_sotoryboard_01_1956.jpg"
+  },
+
+  "Foto 001_1983": {
+    "title": "Retrato con pipa",
     "date": "1983",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_033_1983.jpg",
-    "cat": "foto"
-}, {
-    "date": "1983",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_034_1983.jpg",
-    "cat": "foto"
-}, {
-    "date": "1983",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_044_1983.jpg",
-    "cat": "foto"
-}, {
-    "date": "1984",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_050_1984.jpg",
-    "cat": "foto"
-}, {
-    "date": "1987",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_039_1987.jpg",
-    "cat": "foto"
-}, {
-    "date": "1992",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_037_1992.jpg",
-    "cat": "foto"
-}, {
-    "date": "2000",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_023_2000.jpg",
-    "cat": "foto"
-}, {
-    "date": "2000",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_024_2000.jpg",
-    "cat": "foto"
-}, {
-    "date": "2000",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_025_2000.jpg",
-    "cat": "foto"
-}, {
-    "date": "2000",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_026_2000.jpg",
-    "cat": "foto"
-}, {
-    "date": "2014",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_035_2014.jpg",
-    "cat": "foto"
-}, {
-    "date": "2018",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_036_2018.jpg",
-    "cat": "foto"
-}, {
-    "date": "2018",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_038_2018.jpg",
-    "cat": "foto"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_001.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_002.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_003.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_004.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_005.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_006.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_007.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_008.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_009.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_010.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_011.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_012.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_013.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_014.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_015.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_016.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_017.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_018.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_019.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_020.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_021.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_022.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_023.jpg",
-    "cat": "dibujo"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_024.jpg",
-    "cat": "dibujo"
-}, {
-    "text": "Fotomontaje con pipa",
-    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_001_1983.jpg",
-    "cat": "foto"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_001.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_002.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_003_2001.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_004.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_005.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_006.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_007.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_008.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_009.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010_1972.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_011.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_012.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_013.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_014.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_015.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_016.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_017.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_018.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_019.jpg",
-    "cat": "pintura"
-}, {
-    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_020.jpg",
-    "cat": "pintura"
-}]
+    "text": "Fotomontaje realizado por Juan Mastrantonio en el Instituto de Arte UCV",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_001_1983.jpg"
+  },
+
+  "Foto 002_1928": {
+    "title": "niño",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_002_1928.jpg"
+  },
+  "Foto 003_1928": {
+    "title": "otro niño",
+    "date": "",
+    "text": "que es el mismo",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_003_1928.jpg"
+  },
+  "Foto 004_1930": {
+    "title": "en bicicleta",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_004_1930.jpg"
+  },
+  "Foto 005_1954": {
+    "title": "junta",
+    "date": "",
+    "text": "Claudio Girola, Alberto Cruz, Godofredo Iommi junto a muchos otro(a)s",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_010_1948.jpg"
+  },
+  "Foto 008_1960": {
+    "title": "Andén",
+    "date": "",
+    "text": "Llegada y despedida",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_008_1960.jpg"
+  },
+  "Foto 009_1948": {
+    "title": "Proto travesía",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_009_1948.jpg"
+  },
+  "Foto 010_1948": {
+    "title": "...",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_010_1948.jpg"
+  },
+  "Foto 011_1948": {
+    "title": "..+++..",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_011_1948.jpg"
+  },
+  "Foto 012_1948": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_012_1948.jpg"
+  },
+  "Foto 013_1948": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_013_1948.jpg"
+  },
+  "Foto 014_1948": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_014_1948.jpg"
+  },
+  "Foto 015_1956": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_015_1956.jpg"
+  },
+  "Foto 016_1961": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_photos/fml_ph_016_1961.jpg"
+  },
+  "Foto pt_001": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_001.jpg"
+  },
+  "Foto pt_002": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_002.jpg"
+  },
+  "Foto pt_003": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_003_2001.jpg"
+  },
+  "Foto pt_004": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_004.jpg"
+  },
+  "Foto pt_005": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_005.jpg"
+  },
+  "Foto pt_006": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_006.jpg"
+  },
+  "Foto pt_007": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_007.jpg"
+  },
+  "Foto pt_008": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_008.jpg"
+  },
+  "Foto pt_009": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_009.jpg"
+  },
+  "Foto pt_010_1972": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_010_1972.jpg"
+  },
+  "Foto pt_010": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_010.jpg"
+  },
+  "Foto pt_011": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_011.jpg"
+  },
+  "Foto pt_012": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_012.jpg"
+  },
+  "Foto pt_013": {
+    "title": "",
+    "date": "",
+    "text": "",
+    "video": "",
+    "img": "images/fml_paintings/fml_pt_013.jpg"
+  }
+}
