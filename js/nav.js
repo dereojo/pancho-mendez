@@ -55,7 +55,7 @@ function regen() {
 }
 
 function buildNotes(data) {
-  for (let key in data.datos) {
+  for (let key in data) {
     let num = round(random(N.length - 1));
     let cant = data.length;
     let th = round(random(cant - 1));

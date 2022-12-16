@@ -1,676 +1,539 @@
-﻿{
-    "datos": [
-        {
-            "date": "1928",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_002_1928.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1928",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_003_1928.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1930",
-            "text": "Andando en bicicleta",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_004_1930.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1930",
-            "text": "Balnearo de las Cruces, 1930",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_057_las_cruces_1930.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_009_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_010_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_011_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_012_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_013_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1948",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_014_1948.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1954",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_005_1954.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1955",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_054_1955.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1956",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_015_1956.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1956",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_029_1956.png",
-            "cat": "foto"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_001_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_002_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_003_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_004_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_005_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_006_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_007_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_008_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_009_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_010_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_011_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_012_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_013_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_014_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_015_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_016_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_017_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_018_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_019_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_020_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_021_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_022_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_023_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_024_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_025_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_026_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_027_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_028_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "text": "Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_029_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 1 ",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_01_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 2",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_02_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 3",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_03_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 4",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_04_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 5",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_05_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "title": "Lámina 6",
-            "date": "1957",
-            "text": "Láminas del proyecto Escuela Naval",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_06_1957.jpg",
-            "cat": "arquitectura"
-        },
-        {
-            "date": "1957",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_027_1957.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1957",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_030_1957.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1958",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_019_1958.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1958",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_043_1958.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1960",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_008_1960.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1960",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_018_1960.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1960",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_022_1960.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1960",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_032_1960.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1961",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_016_1961.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1961",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_031_1961.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1962",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_017_1962.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1962",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_042_1962.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1963",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_031_1963.jpg",
-            "cat": "foto"
-        },
-        {
-            "title": "Escuela Naval",
-            "date": "1965",
-            "img": "http://franciscomendezlabbe.cl/images/fml_cadete/mnba/fml_cadete_sotoryboard_01_1956.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "date": "1965",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_055_1965.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1966",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_041_1966.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1970",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_040_1970.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1970",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_045_1970.jpg",
-            "cat": "foto"
-        },
-        {
-            "title": "Pintura migrada",
-            "date": "1970",
-            "text": "Cortometraje FML MNBA 01 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
-            "video": "https://player.vimeo.com/video/654743453?h=e0c6449117&color=050505&title=0&byline=0&portrait=0",
-            "cat": "video"
-        },
-        {
-            "title": "Talleres de Murales: los primeros años",
-            "date": "1970",
-            "text": "Cortometraje FML MNBA 02 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
-            "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0"
-        },
-        {
-            "date": "1972",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_020_1972.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1972",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_021_1972.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1973",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_048_1973.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1981",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_046_1981.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1982",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_047_1982.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1982",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_049_1982.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1983",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_033_1983.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1983",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_034_1983.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1983",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_044_1983.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1984",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_050_1984.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1987",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_039_1987.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "1992",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_037_1992.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2000",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_023_2000.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2000",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_024_2000.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2000",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_025_2000.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2000",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_026_2000.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2014",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_035_2014.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2018",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_036_2018.jpg",
-            "cat": "foto"
-        },
-        {
-            "date": "2018",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_038_2018.jpg",
-            "cat": "foto"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_001.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_002.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_003.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_004.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_005.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_006.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_007.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_008.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_009.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_010.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_011.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_012.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_013.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_014.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_015.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_016.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_017.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_018.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_019.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_020.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_021.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_022.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_023.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_024.jpg",
-            "cat": "dibujo"
-        },
-        {
-            "text": "Fotomontaje con pipa",
-            "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_001_1983.jpg",
-            "cat": "foto"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_001.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_002.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_003_2001.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_004.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_005.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_006.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_007.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_008.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_009.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010_1972.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_011.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_012.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_013.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_014.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_015.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_016.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_017.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_018.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_019.jpg",
-            "cat": "pintura"
-        },
-        {
-            "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_020.jpg",
-            "cat": "pintura"
-        }
-    ]
-}
+﻿[{
+    "date": "1928",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_002_1928.jpg",
+    "cat": "foto"
+}, {
+    "date": "1928",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_003_1928.jpg",
+    "cat": "foto"
+}, {
+    "date": "1930",
+    "text": "Andando en bicicleta",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_004_1930.jpg",
+    "cat": "foto"
+}, {
+    "date": "1930",
+    "text": "Balnearo de las Cruces, 1930",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_057_las_cruces_1930.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_009_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_010_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_011_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_012_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_013_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1948",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_014_1948.jpg",
+    "cat": "foto"
+}, {
+    "date": "1954",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_005_1954.jpg",
+    "cat": "foto"
+}, {
+    "date": "1955",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_054_1955.jpg",
+    "cat": "foto"
+}, {
+    "date": "1956",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_015_1956.jpg",
+    "cat": "foto"
+}, {
+    "date": "1956",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_029_1956.png",
+    "cat": "foto"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_001_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_002_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_003_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_004_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_005_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_006_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_007_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_008_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_009_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_010_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_011_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_012_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_013_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_014_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_015_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_016_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_017_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_018_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_019_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_020_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_021_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_022_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_023_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_024_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_025_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_026_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_027_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_028_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "text": "Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_enaval/fml_enaval_029_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 1 ",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_01_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 2",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_02_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 3",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_03_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 4",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_04_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 5",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_05_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "title": "Lámina 6",
+    "date": "1957",
+    "text": "Láminas del proyecto Escuela Naval",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/moma/fml_cadete_original_06_1957.jpg",
+    "cat": "arquitectura"
+}, {
+    "date": "1957",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_027_1957.jpg",
+    "cat": "foto"
+}, {
+    "date": "1957",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_030_1957.jpg",
+    "cat": "foto"
+}, {
+    "date": "1958",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_019_1958.jpg",
+    "cat": "foto"
+}, {
+    "date": "1958",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_043_1958.jpg",
+    "cat": "foto"
+}, {
+    "date": "1960",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_008_1960.jpg",
+    "cat": "foto"
+}, {
+    "date": "1960",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_018_1960.jpg",
+    "cat": "foto"
+}, {
+    "date": "1960",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_022_1960.jpg",
+    "cat": "foto"
+}, {
+    "date": "1960",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_032_1960.jpg",
+    "cat": "foto"
+}, {
+    "date": "1961",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_016_1961.jpg",
+    "cat": "foto"
+}, {
+    "date": "1961",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_031_1961.jpg",
+    "cat": "foto"
+}, {
+    "date": "1962",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_017_1962.jpg",
+    "cat": "foto"
+}, {
+    "date": "1962",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_042_1962.jpg",
+    "cat": "foto"
+}, {
+    "date": "1963",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_031_1963.jpg",
+    "cat": "foto"
+}, {
+    "title": "Escuela Naval",
+    "date": "1965",
+    "img": "http://franciscomendezlabbe.cl/images/fml_cadete/mnba/fml_cadete_sotoryboard_01_1956.jpg",
+    "cat": "dibujo"
+}, {
+    "date": "1965",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_055_1965.jpg",
+    "cat": "foto"
+}, {
+    "date": "1966",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_041_1966.jpg",
+    "cat": "foto"
+}, {
+    "date": "1970",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_040_1970.jpg",
+    "cat": "foto"
+}, {
+    "date": "1970",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_045_1970.jpg",
+    "cat": "foto"
+}, {
+    "title": "Pintura migrada",
+    "date": "1970",
+    "text": "Cortometraje FML MNBA 01 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
+    "video": "https://player.vimeo.com/video/654743453?h=e0c6449117&color=050505&title=0&byline=0&portrait=0",
+    "cat": "video"
+}, {
+    "title": "Talleres de Murales: los primeros años",
+    "date": "1970",
+    "text": "Cortometraje FML MNBA 02 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
+    "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0"
+}, {
+    "date": "1972",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_020_1972.jpg",
+    "cat": "foto"
+}, {
+    "date": "1972",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_021_1972.jpg",
+    "cat": "foto"
+}, {
+    "date": "1973",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_048_1973.jpg",
+    "cat": "foto"
+}, {
+    "date": "1981",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_046_1981.jpg",
+    "cat": "foto"
+}, {
+    "date": "1982",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_047_1982.jpg",
+    "cat": "foto"
+}, {
+    "date": "1982",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_049_1982.jpg",
+    "cat": "foto"
+}, {
+    "date": "1983",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_033_1983.jpg",
+    "cat": "foto"
+}, {
+    "date": "1983",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_034_1983.jpg",
+    "cat": "foto"
+}, {
+    "date": "1983",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_044_1983.jpg",
+    "cat": "foto"
+}, {
+    "date": "1984",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_050_1984.jpg",
+    "cat": "foto"
+}, {
+    "date": "1987",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_039_1987.jpg",
+    "cat": "foto"
+}, {
+    "date": "1992",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_037_1992.jpg",
+    "cat": "foto"
+}, {
+    "date": "2000",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_023_2000.jpg",
+    "cat": "foto"
+}, {
+    "date": "2000",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_024_2000.jpg",
+    "cat": "foto"
+}, {
+    "date": "2000",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_025_2000.jpg",
+    "cat": "foto"
+}, {
+    "date": "2000",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_026_2000.jpg",
+    "cat": "foto"
+}, {
+    "date": "2014",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_035_2014.jpg",
+    "cat": "foto"
+}, {
+    "date": "2018",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_036_2018.jpg",
+    "cat": "foto"
+}, {
+    "date": "2018",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_038_2018.jpg",
+    "cat": "foto"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_001.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_002.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_003.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_004.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_005.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_006.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_007.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_008.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_009.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_010.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_011.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_012.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_013.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_014.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_015.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_016.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_017.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_018.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_019.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_020.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_021.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_022.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_023.jpg",
+    "cat": "dibujo"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_024.jpg",
+    "cat": "dibujo"
+}, {
+    "text": "Fotomontaje con pipa",
+    "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_001_1983.jpg",
+    "cat": "foto"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_001.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_002.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_003_2001.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_004.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_005.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_006.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_007.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_008.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_009.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010_1972.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_011.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_012.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_013.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_014.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_015.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_016.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_017.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_018.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_019.jpg",
+    "cat": "pintura"
+}, {
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_020.jpg",
+    "cat": "pintura"
+}]
