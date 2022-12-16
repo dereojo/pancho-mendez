@@ -1,6 +1,6 @@
 {
   "Pintura no albergada 1": {
-    "title": "Pintura migrada",
+    "title": "Pintura migrada 2",
     "date": "1970",
     "text": "Cortometraje FML MNBA 01 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
     "video": "https://player.vimeo.com/video/654743453?h=e0c6449117&color=050505&title=0&byline=0&portrait=0",
@@ -17,16 +17,16 @@
 
   "Escuela Naval 1": {
     "title": "Escuela Naval",
-    "date": "1965",
+    "date": "1956",
     "text": "Croquis de la escuela naval",
     "video": "",
     "img": "images/fml_cadete/mnba/fml_cadete_sotoryboard_01_1956.jpg"
   },
 
   "Foto 001_1983": {
-    "title": "Fotomontaje con pipa",
+    "title": "Retrato con pipa",
     "date": "1983",
-    "text": "",
+    "text": "Fotomontaje realizado por Juan Mastrantonio en el Instituto de Arte UCV",
     "video": "",
     "img": "images/fml_photos/fml_ph_001_1983.jpg"
   },
