@@ -1046,6 +1046,27 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
   text-shadow: none;
 }
 
+.pancho {
+  mix-blend-mode: multiply;
+  transition: all ease-out 1s;
+  filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
+  max-width: 100%;
+}
+.pancho:hover {
+  filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
+}
+
+input[type=checkbox] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid gray;
+  /* Adjusts the position of the checkboxes on the text baseline */
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color: green;
+}
+
 #p5 {
   position: relative;
 }
@@ -1069,6 +1090,7 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 }
 .img-overlay img {
   max-height: 75vh;
+  mix-blend-mode: normal;
   filter: invert(0%);
   transition: ease all 1s;
 }
