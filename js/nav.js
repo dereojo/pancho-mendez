@@ -14,7 +14,6 @@ let notes; // arreglo a partir de los datos
 
 let content; // div del contenido: lado izquierso
 let divP5; // div de esta nav: lado derecho
-let acercaBtn, colaboraBtn, contactoBtn;
 let font;
 
 let colorPal;
@@ -45,6 +44,8 @@ function regen() {
   let w = divP5.offsetWidth;
   let sketch = createCanvas(w, windowHeight - 7);
   sketch.parent(divP5);
+  sketch.style('position', 'absolute');
+  sketch.style('z-index', '1000');
   N = [];
   for (let i = 0; i < n; i++) {
     N.push(new Note());
@@ -63,8 +64,6 @@ function buildNotes(data) {
     n.w = globalWidth * 2;
     n.x = round(random(width / n.w) * n.w);
     n.h = random(30, 60);
-    n.color = color(0);
-    n.colorOver = color("red");
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
@@ -74,6 +73,29 @@ function buildNotes(data) {
     n.index = num;
     n.hasData = true;
     n.step *= 0.333;
+    console.log(n.cat);
+    switch(n.cat){
+      case 'video':
+        n.color = color(200, 20, 0);
+        n.colorOver = color(56, 41, 41);
+        break;
+      case 'arquitectura':
+        n.color = color(200, 20, 0);
+        n.colorOver = color(56, 41, 41);
+        break;
+      case 'foto':
+        n.color = color(200, 20, 0);
+        n.colorOver = color(56, 41, 41);
+        break;
+      case 'dibujo':
+        n.color = color(200, 20, 0);
+        n.colorOver = color(56, 41, 41);
+        break;
+      case 'pintura':
+        n.color = color(200, 20, 0);
+        n.colorOver = color(56, 41, 41);
+        break;
+    }
     notes.push(n);
   }
   console.log({notes});
@@ -166,7 +188,8 @@ function mousePressed() {
     if (n.over) {
       removeElements();
       clearContent();
-      let newTitle = createElement('h2', n.title);
+      let newTitle = createElement('h2', n.date);
+
       newTitle.parent('content');
       let newText = createElement('p', n.text);
       newText.parent('content');
