@@ -29,11 +29,9 @@ input[type="checkbox"] {
     position: relative;
     width: 1em;
     height: 1em;
-    border: 1px solid gray;
-    /* Adjusts the position of the checkboxes on the text baseline */
-    vertical-align: -2px;
-    /* Set here so that Windows' High-Contrast Mode can override */
-    color: green;
+    mix-blend-mode: multiply;
+    vertical-align: -.69ex;
+    margin-bottom: 0;
   }
 
 #p5{
@@ -42,6 +40,7 @@ input[type="checkbox"] {
 .vid-overlay{
     display: inline-block;
     position: absolute;
+    z-index: 2000;
     top: 10vh;
     left: 0;
     opacity: .95;
