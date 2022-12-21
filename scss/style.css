@@ -1049,11 +1049,12 @@ url: https://www.youtube.com/watch?v=DZg6UfS5zYg
 .pancho {
   mix-blend-mode: multiply;
   transition: all ease-out 1s;
-  filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
+  filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
   max-width: 100%;
+  border-radius: 20px;
 }
 .pancho:hover {
-  filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
+  filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
 }
 
 input[type=checkbox] {
@@ -1063,6 +1064,39 @@ input[type=checkbox] {
   mix-blend-mode: multiply;
   vertical-align: -0.69ex;
   margin-bottom: 0;
+}
+
+#main {
+  min-height: 100vh;
+}
+
+/* párrafo selector con los checkboxes para filtrar */
+.selector div {
+  display: inline-block;
+}
+.selector div label {
+  font-weight: normal;
+}
+.selector div label input[type=checkbox] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  vertical-align: -2px;
+  margin-right: 1ex;
+}
+.selector div label span::before {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+#content {
+  margin-top: 3em;
 }
 
 #p5 {
