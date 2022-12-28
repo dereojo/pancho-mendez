@@ -1,0 +1,16 @@
+<h2>Francisco Méndez Labbé</h2>
+<div id='foto-pancho'></div>   
+<!-- <img src="images/fml_photos/fml_ph_035_2014.jpg" class="pancho"> -->
+<p class="selector"> 
+    <span id="PIN"></span>
+    <span id="ARQ"></span> 
+    <span id="DIB"></span>
+    <span id="VID"></span>
+    <span id="FOT"></span>
+</p>
+
+<dl>
+    <dt>Proyecto en desarrollo</dt>
+    <dt>Realizado por <strong>Xhinno Leiva</strong></dt>
+    <dt>Producción: <a href="https://github.com/dereojo/pancho-mendez">dereojo comunicaciones</a></dt>
+</dl>

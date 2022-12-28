@@ -7,7 +7,7 @@
 // const FRICTION = 0.0023;
 
 let n = 380; // cantidad de elementos
-let globalWidth = 6; // ancho
+let globalWidth = 3; // ancho
 let N; // arreglo global de elementos
 let data; // objeto de datos
 let notes; // arreglo a partir de los datos
@@ -17,9 +17,7 @@ let content; // div del contenido: lado izquierso
 let divP5; // div de esta nav: lado derecho
 
 let toggleARQ, togglePIN, toggleDIB, toggleVID, toggleFOT;
-
 let font;
-
 let colorPal;
 
 function getCol(img){
@@ -38,21 +36,24 @@ function gotData(response) {
 }
 
 function setup() {
-  toggleARQ = createCheckbox('Arquitecto', false);
-  togglePIN = createCheckbox('pintor', false);
-  toggleDIB = createCheckbox('artista gráfico', false);
-  toggleVID = createCheckbox('profesor de arquitectura y diseño', false);
-  toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', false);
-  toggleARQ.parent(document.getElementById('ARQ'));
-  togglePIN.parent(document.getElementById('PIN'));
-  toggleDIB.parent(document.getElementById('DIB'));
-  toggleVID.parent(document.getElementById('VID'));
-  toggleFOT.parent(document.getElementById('FOT'));
-  toggleARQ.changed(toggle);
-  togglePIN.changed(toggle);
-  toggleDIB.changed(toggle);
-  toggleVID.changed(toggle);
-  toggleFOT.changed(toggle);
+  if(hasSelector === true){
+    toggleARQ = createCheckbox('arquitecto', false);
+    togglePIN = createCheckbox('Pintor', false);
+    toggleDIB = createCheckbox('artista gráfico', false);
+    toggleVID = createCheckbox('profesor de arquitectura y diseño', false);
+    toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', false);
+    toggleARQ.parent(document.getElementById('ARQ'));
+    togglePIN.parent(document.getElementById('PIN'));
+    toggleDIB.parent(document.getElementById('DIB'));
+    toggleVID.parent(document.getElementById('VID'));
+    toggleFOT.parent(document.getElementById('FOT'));
+    toggleARQ.changed(toggle);
+    togglePIN.changed(toggle);
+    toggleDIB.changed(toggle);
+    toggleVID.changed(toggle);
+    toggleFOT.changed(toggle);
+  }
+
   regen();
 }
 
@@ -98,7 +99,8 @@ function toggle(){
 }
 
 function regen() {
-  let divP5 = document.getElementById('p5');
+  content = document.getElementById('content');
+  divP5 = document.getElementById('p5');
   let divMain = document.getElementById('main');
   let w = divP5.offsetWidth;
   let h = divMain.offsetHeight;
@@ -173,7 +175,7 @@ class Note {
     this.over = false;
     this.color = "#FFFA";
     this.colorOver = this.color;
-    this.title = "";
+    this.title = "-";
     this.cat = "",
     this.hasData = false;
   }
@@ -193,7 +195,6 @@ class Note {
       strokeWeight(1);
       line(this.x + this.w / 2, this.y + this.w / 2, this.x + this.w / 2, this.y + this.h - this.w / 2);
     }
-
     rect(this.x, this.y, this.w, this.h);
   }
 
@@ -232,15 +233,7 @@ function draw() {
       } else {
         textAlign(RIGHT);
         text(n.title, 0, n.y + fontSize, n.x - textMargin, 100);
-      }
-      /*
-      if(mouseIsPressed){
-        let diffx = mouseX - n.x;
-        let diffy = mouseY - n.y;
-        n.x += diffx * FRICTION;
-        n.y += diffy * FRICTION;
-      }
-      */
+      }  
     }
   }
 }
@@ -248,10 +241,11 @@ function draw() {
 function mousePressed() {
   for (let n of notes) {
     if (n.over) {
+      console.log({n});
       removeElements();
       clearContent();
-      let newTitle = createElement('h2', n.date);
 
+      let newTitle = createElement('h2', n.date);
       newTitle.parent('content');
       let newText = createElement('p', n.text);
       newText.parent('content');
@@ -268,6 +262,7 @@ function mousePressed() {
       }
 
       let closeBtn = createButton("<span>cerrar</span>");
+      closeBtn.class('close');
       closeBtn.parent('content');
       closeBtn.mousePressed(clearContent);
     }
