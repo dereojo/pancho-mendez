@@ -18,12 +18,12 @@ $color-white: #f3fffd;
 .pancho{
     mix-blend-mode: multiply;
     transition: all ease-out 1s; 
-    filter: blur(25px) grayscale(0) contrast(500%) brightness(500%);
+    filter: blur(20px) contrast(500%) brightness(500%);
     
     max-width: 100%;
     border-radius: 20px;
     &:hover{
-        filter: blur(0) grayscale(1) contrast(100%) brightness(100%);
+        filter: blur(0) contrast(100%) brightness(100%);
     }
 }
 
@@ -41,10 +41,16 @@ input[type="checkbox"] {
 } 
 /* párrafo selector con los checkboxes para filtrar */
 .selector{
+    display: block;
+    position: relative;
+    font-size: 90%;
     div{
         display: inline-block;
+        margin-right: 1ex;
+
         label{
             font-weight: normal;
+            z-index: 10000;
         
             input[type="checkbox"] {
                 position: relative;
@@ -70,6 +76,10 @@ input[type="checkbox"] {
     }
 }
 
+#text{
+    position: relative;
+}
+
 #content{
     margin-top: 3em;
 }
@@ -80,7 +90,7 @@ input[type="checkbox"] {
 
 .vid-overlay{
     display: inline-block;
-    position: absolute;
+    //position: absolute;
     z-index: 2000;
     top: 10vh;
     left: 0;
@@ -88,16 +98,12 @@ input[type="checkbox"] {
 }
 
 .img-overlay{
-    position: absolute;
-    top: 20vh;
-    left: -25vw;
-    right: 0;
     opacity: .95;
-    max-height: 60vh;
+    // max-height: 60vh;
     
     img{
-        position: absolute;
-        z-index: 100;
+        // position: absolute;
+        z-index: 20000;
         max-height: 75vh;
         filter: invert(0%);
         transition: ease all 1s;

@@ -1,0 +1,1 @@
+<p class="selector"><span id="PIN"></span><span id="ARQ"></span><span id="DIB"></span><span id="VID"></span><span id="FOT"></span></p>

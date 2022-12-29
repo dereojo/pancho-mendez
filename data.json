@@ -1,7 +1,8 @@
 ﻿[{
     "date": "1928",
     "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_002.jpg",
-    "cat": "foto"
+    "cat": "foto",
+    "text": "pancho de niño"
 }, {
     "date": "1928",
     "img": "http://franciscomendezlabbe.cl/images/fml_photos/fml_ph_003.jpg",
@@ -315,11 +316,340 @@
     "date": "1970",
     "text": "Cortometraje FML MNBA 01 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",
     "video": "https://player.vimeo.com/video/654743453?h=e0c6449117&color=050505&title=0&byline=0&portrait=0",
-    "img": ""
+    "cat": "video"
   }, {
     "title": "Talleres de Murales: los primeros años",
     "date": "1970",
     "text": "Cortometraje FML MNBA 02 del proyecto Francisco Méndez Labbé, pintura no albergada desarrollado con ocasión de la Exposición Francisco Méndez Labbé, Modernidad Cálculo y Divergencia realizada exhibición se presenta en la Sala Matta del Museo Nacional de Bellas Artes entre 15 de diciembre de 2021 y hasta el 6 de marzo de 2022, y que da cuenta de la trayectoria del arquitecto, escenógrafo, pintor y docente que representa el paradigma del desplazamiento del oficio y la valoración de la pintura como una disciplina no menor en relación a la arquitectura.<br>Proyecto web doc realizado por Xhinno Leiva<br>Producción: dereojo comunicaciones.",    
-    "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0"
+    "video": "https://player.vimeo.com/video/657497303?h=f733bad193&color=050505&title=0&byline=0&portrait=0",
+    "cat": "video"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_001.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_002.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_003_2001.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_004.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_005.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_006.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_007.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_008.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_009.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_010_1972.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_011.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_012.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_013.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_014.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_015.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_paintings/fml_pt_016.jpg",
+    "video": "",
+    "cat": "pintura"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_001.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_002.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_003.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_004.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_005.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_006.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_007.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_008.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_009.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_010.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_011.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_012.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_013.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_014.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_015.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_016.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_017.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_018.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_019.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_020.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_021.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_022.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_023.jpg",
+    "video": "",
+    "cat": "dibujo"
+  },
+  {
+    "title": "",
+    "date": "",
+    "text": "",
+    "img": "http://franciscomendezlabbe.cl/images/fml_drawings/fml_dw_024.jpg",
+    "video": "",
+    "cat": "dibujo"
   }
 ]
