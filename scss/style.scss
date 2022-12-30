@@ -16,6 +16,10 @@ $color-white: #f3fffd;
 @import "menu";
 
 .pancho{
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto 2em auto;
     mix-blend-mode: multiply;
     transition: all ease-out 1s; 
     filter: blur(20px) contrast(500%) brightness(500%);
