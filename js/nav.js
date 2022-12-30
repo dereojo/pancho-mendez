@@ -12,6 +12,7 @@ let N; // arreglo global de elementos
 let data; // objeto de datos
 let notes; // arreglo a partir de los datos
 
+let init; // siwtch para la primera vez solamente
 
 let content, mediaDiv, textDiv; // div del contenido: lado izquierso
 let divP5; // div de esta nav: lado derecho
@@ -75,16 +76,24 @@ function setup() {
   divMainotes = document.getElementById('main');
   mediaDiv = document.getElementById('media');
   textDiv = document.getElementById('text');
+  init = true;
   newPancho();
   recreateMenu();
   regen();
+  
 }
 
 function newPancho(){
   let elt = document.getElementById('pancho');
-  let panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='"+ panchoFotos[floor(random(panchoFotos.length))] +"' class='pancho'>"
+  let panchoContent;
+  if(init){
+    panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='"+ panchoFotos[floor(random(panchoFotos.length))] +"' class='pancho'>"
+  }else{
+    panchoContent = "<img src='"+ panchoFotos[floor(random(panchoFotos.length))] +"' class='pancho'>"
+  }
   let pancho = createDiv(panchoContent);
   pancho.parent(elt);
+  init = false;
 }
 
 function toggle() {
@@ -345,4 +354,5 @@ function clearContent() {
   removeElements();
   mediaDiv.innerHTML = " ";
   recreateMenu();
+  newPancho();
 }
