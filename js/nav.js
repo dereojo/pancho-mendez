@@ -12,8 +12,6 @@ let N; // arreglo global de elementos
 let data; // objeto de datos
 let notes; // arreglo a partir de los datos
 
-let init; // siwtch para la primera vez solamente
-
 let content, mediaDiv, textDiv; // div del contenido: lado izquierso
 let divP5; // div de esta nav: lado derecho
 let divMainotes;
@@ -54,6 +52,7 @@ function regen() {
   divP5 = document.getElementById('p5');
   divMainotes = document.getElementById('main');
   */
+
   let w = divP5.offsetWidth;
   let h = divMainotes.offsetHeight;
   let sketch = createCanvas(w, h);
@@ -68,6 +67,8 @@ function regen() {
   strokeCap(SQUARE);
   notes = [];
   buildNotes(data);
+  // check if already some are selected
+  toggle();
 }
 
 function setup() {
@@ -76,20 +77,18 @@ function setup() {
   divMainotes = document.getElementById('main');
   mediaDiv = document.getElementById('media');
   textDiv = document.getElementById('text');
-  init = true;
-  newPancho();
+  newPancho(true);
   recreateMenu();
   regen();
-  
 }
 
-function newPancho(){
+function newPancho(init) {
   let elt = document.getElementById('pancho');
   let panchoContent;
-  if(init){
-    panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='"+ panchoFotos[floor(random(panchoFotos.length))] +"' class='pancho'>"
-  }else{
-    panchoContent = "<img src='"+ panchoFotos[floor(random(panchoFotos.length))] +"' class='pancho'>"
+  if (init) {
+    panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
+  } else {
+    panchoContent = "<img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
   }
   let pancho = createDiv(panchoContent);
   pancho.parent(elt);
@@ -254,7 +253,7 @@ function draw() {
       textFont(font);
       textSize(fontSize);
       textLeading(fontSize * .85);
-      fill(0, 200);
+      fill(255, 200);
       if (n.x < width / 2) {
         textAlign(LEFT);
         text(n.title, n.x + textMargin, n.y + fontSize, width - n.x - textMargin * 2, 100);
@@ -269,26 +268,24 @@ function draw() {
 function mousePressed() {
   for (let n of notes) {
     if (n.over) {
-
       clearContent();
-
-      let newTitle = createElement('h5', n.date);
-      newTitle.parent(textDiv);
-      let newText = createElement('p', n.text);
-      newText.parent(textDiv);
-
       if (n.video) {
         let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='420' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
         videoElem.parent(mediaDiv);
+        let newTitle = createElement('h5', n.title);
+        newTitle.parent(textDiv);
+        let newText = createElement('p', n.text + "<br>" + n.date);
+        newText.parent(textDiv);
       }
 
       if (n.image) {
         print("img = " + n.img);
         let imageElem = createDiv("<div class='img-overlay'><img src=" + n.image + " title=" + n.title + " /></div>");
-        imageElem.parent(mediaDiv);
+        imageElem.parent(mediaDiv); 
+        let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
+        imageFooter.parent(textDiv);
+        imageFooter.class('img-footer');
       }
-
-      // recreateMenu();
 
       let closeBtn = createButton("<span>cerrar</span>");
       closeBtn.class('close');
@@ -329,7 +326,6 @@ function recreateMenu() {
       }
     }
 
-
     toggleARQ = createCheckbox('arquitecto', ARQ);
     togglePIN = createCheckbox('pintor', PIN);
     toggleDIB = createCheckbox('artista gráfico', DIB);
@@ -354,5 +350,6 @@ function clearContent() {
   removeElements();
   mediaDiv.innerHTML = " ";
   recreateMenu();
-  newPancho();
+  newPancho(false);
+  resizeCanvas(width, divMainotes.offsetHeight);
 }

@@ -1,9 +1,11 @@
 /*
 *
 *  Sitio de Francisco Méndez Labbe
-*
+*  Diseño: Herbert Spencer González
 *
 */
+
+
 $max-width: 72rem;
 $page-padding: 3rem;
 $nav-block-size: 20px;
@@ -15,19 +17,20 @@ $color-white: #f3fffd;
 @import "skeleton";
 @import "menu";
 
-.pancho{
+.pancho {
     display: block;
     width: 70%;
     height: auto;
     margin: 0 auto 2em auto;
     mix-blend-mode: multiply;
-    transition: all ease-out 1s; 
-    filter: blur(20px) contrast(500%) brightness(500%);
-    
+    transition: all ease-out 1s;
+    filter: blur(15px) contrast(300%) brightness(300%) hue-rotate(180deg);
+
     max-width: 100%;
     border-radius: 20px;
-    &:hover{
-        filter: blur(0) contrast(100%) brightness(100%);
+
+    &:hover {
+        filter: blur(0) contrast(100%) brightness(100%) hue-rotate(0);
     }
 }
 
@@ -38,24 +41,26 @@ input[type="checkbox"] {
     mix-blend-mode: multiply;
     vertical-align: -.69ex;
     margin-bottom: 0;
-  }
+}
 
-#main{
+#main {
     min-height: 100vh;
-} 
+}
+
 /* párrafo selector con los checkboxes para filtrar */
-.selector{
+.selector {
     display: block;
     position: relative;
     font-size: 90%;
-    div{
+
+    div {
         display: inline-block;
         margin-right: 1ex;
 
-        label{
+        label {
             font-weight: normal;
             z-index: 10000;
-        
+
             input[type="checkbox"] {
                 position: relative;
                 width: 1em;
@@ -64,8 +69,8 @@ input[type="checkbox"] {
                 margin-right: 1ex;
             }
 
-            span{
-                &::before{
+            span {
+                &::before {
                     display: inline-block;
                     position: absolute;
                     top: 0;
@@ -80,19 +85,19 @@ input[type="checkbox"] {
     }
 }
 
-#text{
+#text {
     position: relative;
 }
 
-#content{
+#content {
     margin-top: 3em;
 }
 
-#p5{
+#p5 {
     position: relative;
 }
 
-.vid-overlay{
+.vid-overlay {
     display: inline-block;
     //position: absolute;
     z-index: 2000;
@@ -101,25 +106,41 @@ input[type="checkbox"] {
     opacity: .95;
 }
 
-.img-overlay{
+.img-overlay {
     opacity: .95;
     // max-height: 60vh;
-    
-    img{
-        // position: absolute;
-        z-index: 20000;
+
+    img {
+        outline: 3px solid white;
         max-height: 75vh;
         filter: invert(0%);
         transition: ease all 1s;
-        &:hover{
+
+        &:hover {
             z-index: 20000;
         }
     }
 }
 
+.img-footer {
+    h5 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        margin: 1rem 0 0 0;
+    }
 
-button.close{
+    p {
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+
+button.close {
     position: fixed;
+    z-index: 10100;
     top: .2em; // 2.75ex;
     margin-left: -2ex;
     color: $color-white;
@@ -130,29 +151,34 @@ button.close{
     border-radius: 0 !important;
     padding: 0;
     line-height: 0;
-    font-weight: 100;
 
-    span{
+
+    span {
         display: none;
     }
-    &:hover{
-       background-color: $color-white;
-       &::before{
-        color: $color-orange;
-       }
+
+    &:hover {
+        background-color: $color-white;
+
+        &::before {
+            color: $color-orange;
+        }
     }
-    &::before{
+
+    &::before {
+        font-family: "Futura PT", "Futura", "Century Gothic", sans-serif;
         display: block;
         color: $color-white;
+        font-weight: 100;
         font-size: 1.62em;
         content: "+";
-        margin-left: .2ex;
+        margin-left: 0;
         transform: rotate(45deg);
     }
 }
 
 @media (min-width: 550px) {
-   // .img-overlay{left: -25vw;}
+    // .img-overlay{left: -25vw;}
 }
 
 .vp-preview {
@@ -161,27 +187,116 @@ button.close{
     left: 0;
 }
 
-#p5_loading{
+#p5_loading {
     display: flex;
+    height: 100vh;
     justify-content: center;
-    color: #FFF6;
-    span{
+    align-items: center;
+
+    span {
+        font-size: 2rem;
         display: inline-block;
-        margin: 45% 0 ;
+        margin: 45% 0;
     }
 }
 
-.row{
+.row {
     position: relative;
-    .column{
+
+    .column {
         position: relative;
     }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
+/*
 @media (min-width: 550px) {
 
-    .img-overlay{left: -25vw;}
-    
+}
+*/
 
+
+// animation
+
+.heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
 }
