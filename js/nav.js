@@ -37,8 +37,8 @@ function preload() {
   data = loadJSON("data.json", gotData, 'json');
   font = loadFont("data/Jost-Medium.ttf");
   colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
-  selectorContent = loadStrings('selector.txt');
-  creditsContent = loadStrings('credits.txt');
+  selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span></p>";
+  creditsContent = "<dl class='credits'><dt>Proyecto en desarrollo</dt><dt>Realizado por <strong>Xhinno Leiva</strong></dt><dt>Producción: <a href='https://github.com/dereojo/pancho-mendez'>dereojo comunicaciones</a></dt></dl>";
 }
 
 function gotData(response) {
@@ -83,20 +83,21 @@ function setup() {
 }
 
 function newPancho(init) {
-  let elt = document.getElementById('pancho');
-  let panchoContent;
-  if (init) {
-    panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
-  } else {
-    panchoContent = "<img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
+  if(hasSelector){
+    let elt = document.getElementById('pancho');
+    let panchoContent;
+    if (init) {
+      panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho' title='Pancho Méndez'>"
+    } else {
+      panchoContent = "<img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
+    }
+    let pancho = createDiv(panchoContent);
+    pancho.parent(elt);
+    init = false;
   }
-  let pancho = createDiv(panchoContent);
-  pancho.parent(elt);
-  init = false;
 }
 
 function toggle() {
-
   print("##################################");
   print("togglePIN = " + togglePIN.checked());
   print("toggleARQ = " + toggleARQ.checked());

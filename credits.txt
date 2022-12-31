@@ -1,1 +1,0 @@
-<dl class='credits'><dt>Proyecto en desarrollo</dt><dt>Realizado por <strong>Xhinno Leiva</strong></dt><dt>Producción: <a href="https://github.com/dereojo/pancho-mendez">dereojo comunicaciones</a></dt></dl>
