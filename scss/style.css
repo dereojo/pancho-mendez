@@ -1196,6 +1196,7 @@ button.close::before {
   align-items: center;
 }
 #p5_loading span {
+  text-align: center;
   font-size: 2rem;
   display: inline-block;
   margin: 45% 0;
