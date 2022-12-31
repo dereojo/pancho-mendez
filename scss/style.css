@@ -1119,11 +1119,26 @@ input[type=checkbox] {
 }
 
 .vid-overlay {
+  position: absolute;
   display: inline-block;
-  z-index: 2000;
-  top: 10vh;
-  left: 0;
-  opacity: 0.95;
+  width: 210%;
+  z-index: 20000;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.vid-footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin: 460px 0 0 0;
+}
+.vid-footer p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.vid-footer p strong {
+  font-weight: 600;
 }
 
 .img-overlay {
@@ -1196,10 +1211,11 @@ button.close::before {
   align-items: center;
 }
 #p5_loading span {
+  color: rgba(255, 255, 255, 0.2666666667);
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
   display: inline-block;
-  margin: 45% 0;
 }
 
 .row {

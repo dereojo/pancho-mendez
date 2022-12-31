@@ -171,8 +171,8 @@ function buildNotes(data) {
         n.colorOver = color("deepSkyBlue");
         break;
       case "video":
-        n.color = color("cyan");
-        n.colorOver = color("blue");
+        n.color = color("deepPink");
+        n.colorOver = color("fuchsia");
         break;
       case "foto":
         n.color = color(0);
@@ -189,7 +189,7 @@ class Note {
     this.from = random(0, height / 2);
     this.to = random(this.from + this.w, this.from + height / 4);
     this.h = this.to - this.from;
-    this.x = floor(random(width / this.w)) * this.w;
+    this.x = floor(random(width / this.w)) * this.w - this.w;
     this.y = random(-this.h / 2, height);
     this.step = random(.1, .8);
     this.over = false;
@@ -209,9 +209,11 @@ class Note {
   draw() {
     noStroke();
     if (this.active) {
+      blendMode(MULTIPLY);
       fill(this.color);
       this.w = globalWidth * 3;
     } else {
+      blendMode(BLEND);
       fill("#FFF3");
       this.w = globalWidth;
     }
@@ -241,6 +243,7 @@ class Note {
 
 function draw() {
   clear();
+  blendMode(BLEND);
   for (let n of N) {
     if (!n.hasData) n.go();
   }
@@ -271,12 +274,13 @@ function mousePressed() {
     if (n.over) {
       clearContent();
       if (n.video) {
-        let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='420' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
+        let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='450' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
         videoElem.parent(mediaDiv);
-        let newTitle = createElement('h5', n.title);
-        newTitle.parent(textDiv);
-        let newText = createElement('p', n.text + "<br>" + n.date);
-        newText.parent(textDiv);
+
+
+        let videoFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
+        videoFooter.parent(textDiv);
+        videoFooter.class('vid-footer');
       }
 
       if (n.image) {
@@ -349,7 +353,7 @@ function recreateMenu() {
 
 function clearContent() {
   removeElements();
-  mediaDiv.innerHTML = " ";
+  mediaDiv.innerHTML = "";
   recreateMenu();
   newPancho(false);
   resizeCanvas(width, divMainotes.offsetHeight);
