@@ -128,7 +128,8 @@ input[type="checkbox"] {
     // max-height: 60vh;
 
     img {
-        outline: 3px solid white;
+        border: 7px solid #FFF3;
+        border-radius: 7px;
         max-height: 75vh;
         filter: invert(0%);
         transition: ease all 1s;
