@@ -47,12 +47,6 @@ function gotData(response) {
 }
 
 function regen() {
-  /*
-  content = document.getElementById('content');
-  divP5 = document.getElementById('p5');
-  divMainotes = document.getElementById('main');
-  */
-
   let w = divP5.offsetWidth;
   let h = divMainotes.offsetHeight;
   let sketch = createCanvas(w, h);
@@ -285,7 +279,7 @@ function mousePressed() {
 
       if (n.image) {
         print("img = " + n.img);
-        let imageElem = createDiv("<div class='img-overlay'><img onload='regen()' src=" + n.image + " title=" + n.title + " /></div>");
+        let imageElem = createDiv("<div class='img-overlay'><img onload='resize()' src=" + n.image + " title=" + n.title + " /></div>");
         imageElem.parent(mediaDiv); 
         let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         imageFooter.parent(textDiv);
@@ -301,8 +295,7 @@ function mousePressed() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-  regen();
+  resize();
 }
 
 function recreateMenu() {
@@ -357,4 +350,19 @@ function clearContent() {
   recreateMenu();
   newPancho(false);
   resizeCanvas(width, divMainotes.offsetHeight);
+}
+
+function resize(){
+  
+    let oldHeight = height;
+  
+    let w = divP5.offsetWidth;
+    let h = divMainotes.offsetHeight;
+    resizeCanvas(w, h);
+  
+    for(let n of N){
+      N.y = map(N.y, 0, oldHeight, 0, height);
+    }
+
+    toggle();
 }
