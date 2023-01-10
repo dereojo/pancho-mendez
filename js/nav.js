@@ -285,7 +285,7 @@ function mousePressed() {
 
       if (n.image) {
         print("img = " + n.img);
-        let imageElem = createDiv("<div class='img-overlay'><img src=" + n.image + " title=" + n.title + " /></div>");
+        let imageElem = createDiv("<div class='img-overlay'><img onload='regen()' src=" + n.image + " title=" + n.title + " /></div>");
         imageElem.parent(mediaDiv); 
         let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         imageFooter.parent(textDiv);
