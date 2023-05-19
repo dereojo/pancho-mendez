@@ -52,11 +52,14 @@ input[type="checkbox"] {
     display: block;
     position: relative;
     font-size: 90%;
-
+    >span{
+        display: block;
     div {
         display: inline-block;
         margin-right: 1ex;
-
+        
+            
+        
         label {
             font-weight: normal;
             z-index: 10000;
@@ -84,6 +87,7 @@ input[type="checkbox"] {
         }
     }
 }
+}
 
 #text {
     position: relative;
@@ -99,11 +103,9 @@ input[type="checkbox"] {
 
 .vid-overlay {
     position: absolute;
-    display: inline-block;
     width: 210%;
     z-index: 20000;
-    text-align: center;
-    opacity: .9;
+    background-color: $color-orange;
 }
 
 .vid-footer {
