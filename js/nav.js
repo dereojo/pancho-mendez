@@ -143,7 +143,7 @@ function buildNotes(data) {
     n.title = data[key].title;
     n.date = data[key].date;
     n.video = data[key].video;
-    n.image = data[key].img;
+    n.image = data[key].url;
     n.text = data[key].text;
     n.cat = data[key].cat;
     n.index = num;
