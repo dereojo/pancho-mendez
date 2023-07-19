@@ -142,10 +142,10 @@ function buildNotes(data) {
     n.h = random(30, 60);
     n.title = data[key].title;
     n.date = data[key].date;
-    n.video = data[key].video;
-    n.image = data[key].img;
+    n.url = data[key].url;
     n.text = data[key].text;
     n.cat = data[key].cat;
+    n.video = data[key].video;
     n.index = num;
     n.hasData = true;
     n.step *= 0.333;
@@ -267,7 +267,7 @@ function mousePressed() {
   for (let n of notes) {
     if (n.over) {
       clearContent();
-      if (n.video) {
+      if (n.cat === "video") {
         let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='450' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
         videoElem.parent(mediaDiv);
 
@@ -275,11 +275,11 @@ function mousePressed() {
         let videoFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         videoFooter.parent(textDiv);
         videoFooter.class('vid-footer');
-      }
 
-      if (n.image) {
-        print("img = " + n.img);
-        let imageElem = createDiv("<div class='img-overlay'><img onload='resize()' src=" + n.image + " title=" + n.title + " /></div>");
+        /** acá podemos diferenciar cada categoría gráficamente  */
+      }else{
+        print("img = " + n.url);
+        let imageElem = createDiv("<div class='img-overlay'><img onload='resize()' src=" + n.url + " title=" + n.title + " /></div>");
         imageElem.parent(mediaDiv); 
         let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         imageFooter.parent(textDiv);
@@ -324,11 +324,14 @@ function recreateMenu() {
       }
     }
 
+    let selectorTitle = createElement('label', '<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pubhtml" style="text-decoration:none" target="_blank">FML</a>');
+    selectorTitle.parent('pancho');
+
     toggleARQ = createCheckbox('arquitecto', ARQ);
     togglePIN = createCheckbox('pintor', PIN);
     toggleDIB = createCheckbox('artista gráfico', DIB);
-    toggleVID = createCheckbox('profesor de arquitectura y diseño', VID);
-    toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', FOT);
+    toggleVID = createCheckbox('escuela', VID);
+    toggleFOT = createCheckbox('instituto', FOT);
 
     toggleARQ.parent(document.getElementById('ARQ'));
     togglePIN.parent(document.getElementById('PIN'));
@@ -363,6 +366,5 @@ function resize(){
     for(let n of N){
       N.y = map(N.y, 0, oldHeight, 0, height);
     }
-
-    toggle();
+    toggle(); // reinicializa los inputs
 }
