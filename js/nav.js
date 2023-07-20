@@ -355,13 +355,11 @@ function clearContent() {
   mediaDiv.innerHTML = "";
   recreateMenu();
   newPancho(false);
-  resizeCanvas(width, divMainotes.offsetHeight);
+  resize();
 }
 
 function resize(){
-  
     let oldHeight = height;
-  
     let w = divP5.offsetWidth;
     let h = divMainotes.offsetHeight;
     resizeCanvas(w, h);
