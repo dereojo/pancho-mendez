@@ -52,13 +52,12 @@ input[type="checkbox"] {
     display: block;
     position: relative;
     font-size: 90%;
-    >span{
+    > span{
         display: block;
+        width: 100%;
     div {
         display: flex;
         margin-right: 1ex;
-        
-            
         
         label {
             font-weight: normal;
@@ -322,4 +321,8 @@ button.close {
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     }
+}
+
+.credits{
+    font-size: 0.57em;
 }

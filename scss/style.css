@@ -1065,8 +1065,12 @@ input[type=checkbox] {
   position: relative;
   font-size: 90%;
 }
-.selector div {
-  display: inline-block;
+.selector > span {
+  display: block;
+  width: 100%;
+}
+.selector > span div {
+  display: flex;
   margin-right: 1ex;
 }
 .selector > span div label {
@@ -1289,4 +1293,7 @@ button.close::before {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+.credits {
+  font-size: 0.57em;
 }/*# sourceMappingURL=style.css.map */

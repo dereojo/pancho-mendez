@@ -38,7 +38,7 @@ function preload() {
   font = loadFont("data/Jost-Medium.ttf");
   colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
   selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span></p>";
-  creditsContent = ""//<dl class='credits'><dt>Proyecto en desarrollo</dt><dt>Realizado por <strong>Xhinno Leiva</strong></dt><dt>Producción: <a href='https://github.com/dereojo/pancho-mendez'>dereojo comunicaciones</a></dt></dl>";
+  creditsContent = "<dl class='credits'><dt>Proyecto permanente desarrollo</dt><dt><a href='https://github.com/dereojo/pancho-mendez'><strong>dereojo</strong> comunicaciones</a></dt><dt>Producción: <strong>Xhinno Leiva</strong></dt><!--<dt>Diseño: <strong>Herbert Spencer</strong></dt>--></dl>";
 }
 
 function gotData(response) {
@@ -268,6 +268,8 @@ function mousePressed() {
   for (let n of notes) {
     if (n.over) {
       clearContent();
+
+      // videos
       if (n.cat === "video") {
         let videoElem = createDiv("<iframe class='vid-overlay' src=" + n.video + " width='100%' height='450' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>");
         videoElem.parent(mediaDiv);
@@ -277,10 +279,10 @@ function mousePressed() {
         videoFooter.parent(textDiv);
         videoFooter.class('vid-footer');
 
-        /** acá podemos diferenciar cada categoría gráficamente  */
+      // imágenes
       }else{
         print("img = " + n.url);
-        let imageElem = createDiv("<div class='img-overlay'><img onload='resize()' src=" + n.url + " title=" + n.title + " /></div>");
+        let imageElem = createDiv("<div class='img-overlay'><img onload='resize()' src=" + n.image + " title=" + n.title + " /></div>");
         imageElem.parent(mediaDiv); 
         let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         imageFooter.parent(textDiv);
@@ -331,8 +333,8 @@ function recreateMenu() {
     toggleARQ = createCheckbox('arquitecto', ARQ);
     togglePIN = createCheckbox('pintor', PIN);
     toggleDIB = createCheckbox('artista gráfico', DIB);
-    toggleVID = createCheckbox('profesor de arquitectura y diseño', VID);
-    toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', FOT);
+    toggleVID = createCheckbox('escuela', VID);
+    toggleFOT = createCheckbox('instituto', FOT);
 
     toggleARQ.parent(document.getElementById('ARQ'));
     togglePIN.parent(document.getElementById('PIN'));
