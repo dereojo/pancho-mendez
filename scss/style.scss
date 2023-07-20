@@ -52,11 +52,14 @@ input[type="checkbox"] {
     display: block;
     position: relative;
     font-size: 90%;
-
+    >span{
+        display: block;
     div {
         display: flex;
         margin-right: 1ex;
-
+        
+            
+        
         label {
             font-weight: normal;
             z-index: 10000;
@@ -84,6 +87,7 @@ input[type="checkbox"] {
         }
     }
 }
+}
 
 #text {
     position: relative;
@@ -99,11 +103,9 @@ input[type="checkbox"] {
 
 .vid-overlay {
     position: absolute;
-    display: inline-block;
     width: 210%;
     z-index: 20000;
-    text-align: center;
-    opacity: .9;
+    background-color: $color-orange;
 }
 
 .vid-footer {
@@ -124,12 +126,13 @@ input[type="checkbox"] {
 }
 
 .img-overlay {
-    opacity: .95;
-    // max-height: 60vh;
+    position: relative;
+    z-index: 2000;
 
     img {
-        border: 7px solid #FFF3;
-        border-radius: 7px;
+        border-top: 7px solid $color-orange;
+        border-bottom: 7px solid $color-orange;
+        border-right: 7px solid $color-orange;
         max-height: 75vh;
         filter: invert(0%);
         transition: ease all 1s;

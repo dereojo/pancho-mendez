@@ -565,7 +565,7 @@ body {
   font-weight: 400;
   font-family: "Futura PT", "Futura", "Century Gothic", sans-serif;
   background-color: #E4752D;
-  color: #f3fffd;
+  color: #FFF;
 }
 
 /* Typography
@@ -584,7 +584,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
@@ -614,26 +614,6 @@ h6 {
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
-}
 p {
   margin-top: 0;
   font-weight: 400;
@@ -644,7 +624,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #ffffff;
+  color: #FFF;
   font-weight: bolder;
 }
 
@@ -929,6 +909,11 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 /* Larger than mobile */
+@media (min-width: 400px) {
+  .vid-overlay {
+    width: 90%;
+  }
+}
 /* Larger than phablet (also point when grid becomes active) */
 /* Larger than tablet */
 /* Larger than desktop */
@@ -1081,21 +1066,21 @@ input[type=checkbox] {
   font-size: 90%;
 }
 .selector div {
-  display: flex;
+  display: inline-block;
   margin-right: 1ex;
 }
-.selector div label {
+.selector > span div label {
   font-weight: normal;
   z-index: 10000;
 }
-.selector div label input[type=checkbox] {
+.selector > span div label input[type=checkbox] {
   position: relative;
   width: 1em;
   height: 1em;
   vertical-align: -2px;
   margin-right: 1ex;
 }
-.selector div label span::before {
+.selector > span div label span::before {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1120,11 +1105,9 @@ input[type=checkbox] {
 
 .vid-overlay {
   position: absolute;
-  display: inline-block;
   width: 210%;
   z-index: 20000;
-  text-align: center;
-  opacity: 0.9;
+  background-color: #E4752D;
 }
 
 .vid-footer h5 {
@@ -1142,11 +1125,13 @@ input[type=checkbox] {
 }
 
 .img-overlay {
-  opacity: 0.95;
+  position: relative;
+  z-index: 2000;
 }
 .img-overlay img {
-  border: 7px solid rgba(255, 255, 255, 0.2);
-  border-radius: 7px;
+  border-top: 7px solid #E4752D;
+  border-bottom: 7px solid #E4752D;
+  border-right: 7px solid #E4752D;
   max-height: 75vh;
   filter: invert(0%);
   transition: ease all 1s;

@@ -38,7 +38,7 @@ function preload() {
   font = loadFont("data/Jost-Medium.ttf");
   colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
   selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span></p>";
-  creditsContent = "<dl class='credits'><dt>Proyecto en desarrollo</dt><dt>Realizado por <strong>Xhinno Leiva</strong></dt><dt>Producción: <a href='https://github.com/dereojo/pancho-mendez'>dereojo comunicaciones</a></dt></dl>";
+  creditsContent = ""//<dl class='credits'><dt>Proyecto en desarrollo</dt><dt>Realizado por <strong>Xhinno Leiva</strong></dt><dt>Producción: <a href='https://github.com/dereojo/pancho-mendez'>dereojo comunicaciones</a></dt></dl>";
 }
 
 function gotData(response) {
@@ -142,7 +142,8 @@ function buildNotes(data) {
     n.h = random(30, 60);
     n.title = data[key].title;
     n.date = data[key].date;
-    n.url = data[key].url;
+    n.video = data[key].video;
+    n.image = data[key].url;
     n.text = data[key].text;
     n.cat = data[key].cat;
     n.video = data[key].video;
@@ -330,8 +331,8 @@ function recreateMenu() {
     toggleARQ = createCheckbox('arquitecto', ARQ);
     togglePIN = createCheckbox('pintor', PIN);
     toggleDIB = createCheckbox('artista gráfico', DIB);
-    toggleVID = createCheckbox('escuela', VID);
-    toggleFOT = createCheckbox('instituto', FOT);
+    toggleVID = createCheckbox('profesor de arquitectura y diseño', VID);
+    toggleFOT = createCheckbox('fundador del instituto de arquitectura de la PUCV y de la Ciudad Abierta', FOT);
 
     toggleARQ.parent(document.getElementById('ARQ'));
     togglePIN.parent(document.getElementById('PIN'));
