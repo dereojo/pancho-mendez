@@ -81,7 +81,7 @@ function newPancho(init) {
     let elt = document.getElementById('pancho');
     let panchoContent;
     if (init) {
-      panchoContent = "<h2>Francisco Méndez Labbé</h2><img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho' title='Pancho Méndez'>"
+      panchoContent = "<h2 style='margin-top: 4em'>Francisco Méndez Labbé</h2><img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho' title='Pancho Méndez'>"
     } else {
       panchoContent = "<img src='" + panchoFotos[floor(random(panchoFotos.length))] + "' class='pancho'>"
     }
