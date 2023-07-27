@@ -327,14 +327,16 @@ function recreateMenu() {
       }
     }
 
+    /*
     let selectorTitle = createElement('label', '<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pubhtml" style="text-decoration:none" target="_blank">FML</a>');
     selectorTitle.parent('pancho');
+    */
 
-    toggleARQ = createCheckbox('arquitecto', ARQ);
-    togglePIN = createCheckbox('pintor', PIN);
-    toggleDIB = createCheckbox('artista gráfico', DIB);
-    toggleVID = createCheckbox('escuela', VID);
-    toggleFOT = createCheckbox('instituto', FOT);
+    toggleARQ = createCheckbox('arquitectura', ARQ);
+    togglePIN = createCheckbox('pintura', PIN);
+    toggleDIB = createCheckbox('gráfica', DIB);
+    toggleVID = createCheckbox('video', VID);
+    toggleFOT = createCheckbox('fotografía', FOT);
 
     toggleARQ.parent(document.getElementById('ARQ'));
     togglePIN.parent(document.getElementById('PIN'));

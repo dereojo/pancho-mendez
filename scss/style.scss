@@ -324,5 +324,48 @@ button.close {
 }
 
 .credits{
-    font-size: 0.57em;
+    display: none;
+}
+
+.mt{
+    margin-top: 12em;
+}
+.creditos{
+
+    margin: 12em 0 0 0;
+    
+    h3{
+        font-size: .75em;
+        letter-spacing: .6ex;
+        font-weight: 200;
+        margin: 6em 0 0 0;
+    }
+
+    p{
+        margin: 1em 0 0 0;
+        font-size: 1.2rem;
+        text-align: right;
+        color: black;
+    }
+
+    .logo{
+        max-width: 10rem;
+        height: auto;
+        margin: 6em 0 0 0;
+        &.ead,
+        &.athar{
+            max-width: 20rem !important;
+            height: auto;
+            /*
+            -webkit-filter: brightness(200%) contrast(200%) hue-rotate(299deg) invert(60%) saturate(200%);
+            filter: brightness(200%) contrast(200%) hue-rotate(299deg) invert(60%) saturate(200%);
+            */
+        }
+    }
+
+    .fondart{
+        margin: 2em 0;
+        text-transform: uppercase;
+        letter-spacing: .3ex;
+    }
 }
