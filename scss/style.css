@@ -1307,13 +1307,13 @@ button.close::before {
 }
 .creditos h3 {
   font-size: 0.75em;
-  letter-spacing: 0.6ex;
-  font-weight: 200;
+  letter-spacing: 0.45ex;
+  font-weight: 400;
   margin: 6em 0 0 0;
 }
 .creditos p {
-  margin: 1em 0 0 0;
-  font-size: 1.2rem;
+  margin: 1em 1em 0 0;
+  font-size: 1.3rem;
   text-align: right;
   color: black;
 }
@@ -1322,7 +1322,7 @@ button.close::before {
   height: auto;
   margin: 6em 0 0 0;
 }
-.creditos .logo.ead, .creditos .logo.athar {
+.creditos .logo.ead, .creditos .logo.athar, .creditos .logo.mcap {
   max-width: 20rem !important;
   height: auto;
   /*
