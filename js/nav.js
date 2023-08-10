@@ -192,7 +192,7 @@ class Note {
     this.colorOver = this.color;
     this.title = "-";
     this.cat = "",
-      this.hasData = false;
+    this.hasData = false;
     this.active = false;
   }
 
@@ -278,7 +278,7 @@ function mousePressed() {
         let videoFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         videoFooter.parent(textDiv);
         videoFooter.class('vid-footer');
-
+        resize();
       // imágenes
       }else{
         print("img = " + n.url);
@@ -287,6 +287,7 @@ function mousePressed() {
         let imageFooter = createDiv("<h5>" + n.title + "</h5><p>" + n.text + "<br><strong>" + n.date + "</strong></p>");
         imageFooter.parent(textDiv);
         imageFooter.class('img-footer');
+        resize();
       }
 
       let closeBtn = createButton("<span>cerrar</span>");
