@@ -34,15 +34,11 @@ function getCol(img) {
 }
 
 function preload() {
-  data = loadJSON("data.json", gotData, 'json');
+  data = loadTable('https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pub?gid=0&single=true&output=csv', 'csv', 'header');
   font = loadFont("data/Jost-Medium.ttf");
   colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
   selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span></p>";
   creditsContent = "<dl class='credits'><dt>Proyecto permanente desarrollo</dt><dt><a href='https://github.com/dereojo/pancho-mendez'><strong>dereojo</strong> comunicaciones</a></dt><dt>Producción: <strong>Xhinno Leiva</strong></dt><!--<dt>Diseño: <strong>Herbert Spencer</strong></dt>--></dl>";
-}
-
-function gotData(response) {
-  print("gotData!");
   notes = [];
 }
 
@@ -54,6 +50,8 @@ function regen() {
   sketch.parent(divP5);
   sketch.style('position', 'absolute');
   sketch.style('z-index', '1000');
+  
+  // se crean 'n' notas vacías en el arreglo N
   N = [];
   for (let i = 0; i < n; i++) {
     N.push(new Note());
@@ -134,25 +132,26 @@ function toggle() {
 }
 
 function buildNotes(data) {
-  for (let key in data) {
-    let num = round(random(N.length - 1));
-    let cant = data.length;
-    let n = N[num];
-    n.x = round(random(width / n.w) * n.w);
+
+  let num = data.getRowCount();
+  let cols = data.getColumnCount();
+  //cycle through the table
+  for (let r = 0; r < num; r++){
+    
+    let n = N[r];
+    n.x = round(random(width / n.w) * (n.w - 1));
     n.h = random(30, 60);
-    n.title = data[key].title;
-    n.date = data[key].date;
-    n.video = data[key].video;
-    n.image = data[key].url;
-    n.text = data[key].text;
-    n.cat = data[key].cat;
-    n.video = data[key].video;
-    n.index = num;
+    n.title = data.getString(r, 0);
+    n.date = data.getString(r, 1);
+    n.text = data.getString(r, 2);
+    n.image = data.getString(r, 3);
+    n.video = data.getString(r, 4);
+    n.cat = data.getString(r, 5);
+    n.index = r;
     n.hasData = true;
     n.step *= 0.333;
-
+  
     switch (n.cat) {
-
       case "pintura":
         n.color = color("blue");
         n.colorOver = color("darkBlue");
