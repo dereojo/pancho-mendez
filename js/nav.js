@@ -28,11 +28,6 @@ let panchoFotos = [
   "/images/fml_fotos_perfil/05.png",
 ];
 
-
-function getCol(img) {
-  return img.get(round(random(img.width)), round(random(img.height)));
-}
-
 function preload() {
   data = loadTable('https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pub?gid=0&single=true&output=csv', 'csv', 'header');
   font = loadFont("data/Jost-Medium.ttf");
@@ -135,7 +130,8 @@ function buildNotes(data) {
 
   let num = data.getRowCount();
   let cols = data.getColumnCount();
-  //cycle through the table
+  
+  //recorre todas las filas de la tabla "data"
   for (let r = 0; r < num; r++){
     
     let n = N[r];

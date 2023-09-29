@@ -6,23 +6,6 @@ El fondo de archivo se encuentra representado por las partículas gráficas en a
 
 ### Estructura de datos
 
-- [Planilla de datos](https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pubhtml) es un archivo que se exporta a XLS o CSV para ser procesado hacia un formato JSON
-- [Herramienta](https://tableconvert.com/excel-to-json) para convertir XLS (u otros) a JSON
-
-Si no conoce el manejo de estas herramientas tendrá que hacerlo directamente en el archivo [data.json](data.json) de forma que su estructura sea de la forma:
-
-```
-data.json = 
-
-[
-    {
-    "title": "Título"
-    "date": "1957",
-    "text": "bajada, formato y explicación",
-    "url": "http://franciscomendezlabbe.cl/images/.../filename.jpg",
-    "cat": "arquitectura"  // [arquitectura, dibujo, foto, pintura, video]
-    },
-    ...
-]
-
-```
+- **[Planilla de datos](https://docs.google.com/spreadsheets/d/1mqtQ9cNma4IPtqgrjeQuDyubLxAt340NSJyxstwYCDs/edit?usp=sharing)** en línea (Google Spreadsheet)
+- Todas las modificaciones en este documentos se publican en formato CSV que es consumido por el archivo **[nav.js](js/nav.js)** que actualiza de forma automática la visualización y navegación en el sitio.
+- Para colaborar (ampliar o rectificar esta información) solicite acceso al documento indicando el sentido de su aporte
