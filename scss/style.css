@@ -1334,4 +1334,11 @@ button.close::before {
   margin: 2em 0;
   text-transform: uppercase;
   letter-spacing: 0.3ex;
+}
+.creditos .autor {
+  margin-bottom: 2em;
+  color: rgba(32, 6, 34, 0.7803921569);
+}
+.creditos .cancion {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

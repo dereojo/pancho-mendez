@@ -369,4 +369,12 @@ button.close {
         text-transform: uppercase;
         letter-spacing: .3ex;
     }
+
+    .autor{
+        margin-bottom: 2em;
+        color: $color-dark
+    }
+    .cancion{
+        font-weight: 600;
+    }
 }
