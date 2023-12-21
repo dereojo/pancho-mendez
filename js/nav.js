@@ -17,7 +17,7 @@ let divP5; // div de esta nav: lado derecho
 let divMainotes;
 let selectorContent, creditsContent;
 
-let toggleARQ, togglePIN, toggleDIB, toggleVID, toggleFOT;
+let toggleARQ, togglePIN, toggleDIB, toggleVID, toggleFOT, toggleTEA;
 let font;
 let colorPal;
 let panchoFotos = [
@@ -32,7 +32,7 @@ function preload() {
   data = loadTable('https://docs.google.com/spreadsheets/d/e/2PACX-1vQswJh4DoOWUujtJQctDbYMHnoTjYHE8Q_bHzGXW6fnglidAJdE3F0r2-E4UcpUV9Eakt67X8i99ROF/pub?gid=0&single=true&output=csv', 'csv', 'header');
   font = loadFont("data/Jost-Medium.ttf");
   colorPal = loadImage("images/fml_paintings/fml_pt_018.jpg");
-  selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span></p>";
+  selectorContent = "<p class='selector'><span id='PIN'></span><span id='ARQ'></span><span id='DIB'></span><span id='VID'></span><span id='FOT'></span><span id='TEA'></span></p>";
   creditsContent = "<dl class='credits'><dt>Proyecto permanente desarrollo</dt><dt><a href='https://github.com/dereojo/pancho-mendez'><strong>dereojo</strong> comunicaciones</a></dt><dt>Producción: <strong>Xhinno Leiva</strong></dt><!--<dt>Diseño: <strong>Herbert Spencer</strong></dt>--></dl>";
   notes = [];
 }
@@ -91,6 +91,7 @@ function toggle() {
   print("toggleDIB = " + toggleDIB.checked());
   print("toggleVID = " + toggleVID.checked());
   print("toggleFOT = " + toggleFOT.checked());
+  print("toggleTEA = " + toggleTEA.checked());
   print("##################################");
 
   for (let n of notes) {
@@ -123,6 +124,12 @@ function toggle() {
     } else if (!toggleFOT.checked() && n.cat === 'foto') {
       n.active = false;
     }
+
+    if (toggleTEA.checked() && n.cat === 'teatro') {
+      n.active = true;
+    } else if (!toggleTEA.checked() && n.cat === 'teatro') {
+      n.active = false;
+    }
   }
 }
 
@@ -150,10 +157,10 @@ function buildNotes(data) {
     switch (n.cat) {
       case "pintura":
         n.color = color("blue");
-        n.colorOver = color("darkBlue");
+        n.colorOver = color("cyan");
         break;
       case "arquitectura":
-        n.color = color("goldenRod");
+        n.color = color("yellow");
         n.colorOver = color("gold");
         break;
       case "dibujo":
@@ -167,6 +174,10 @@ function buildNotes(data) {
       case "foto":
         n.color = color(0);
         n.colorOver = color("gray");
+        break;
+      case "teatro":
+        n.color = color("lime");
+        n.colorOver = color("greenyellow");
         break;
     }
     notes.push(n);
@@ -274,6 +285,7 @@ function mousePressed() {
         videoFooter.parent(textDiv);
         videoFooter.class('vid-footer');
         resize();
+      
       // imágenes
       }else{
         print("img = " + n.url);
@@ -308,6 +320,7 @@ function recreateMenu() {
     let DIB = false;
     let FOT = false;
     let VID = false;
+    let TEA = false;
 
     for (let n of notes) {
       if (n.active && n.cat === "pintura") {
@@ -320,6 +333,8 @@ function recreateMenu() {
         VID = true
       } else if (n.active && n.cat === "foto") {
         FOT = true;
+      } else if (n.active && n.cat === "teatro") {
+        TEA = true;
       }
     }
 
@@ -333,18 +348,21 @@ function recreateMenu() {
     toggleDIB = createCheckbox('gráfica', DIB);
     toggleVID = createCheckbox('video', VID);
     toggleFOT = createCheckbox('fotografía', FOT);
+    toggleTEA = createCheckbox('teatro', TEA);
 
     toggleARQ.parent(document.getElementById('ARQ'));
     togglePIN.parent(document.getElementById('PIN'));
     toggleDIB.parent(document.getElementById('DIB'));
     toggleVID.parent(document.getElementById('VID'));
     toggleFOT.parent(document.getElementById('FOT'));
+    toggleTEA.parent(document.getElementById('TEA'));
 
     toggleARQ.changed(toggle);
     togglePIN.changed(toggle);
     toggleDIB.changed(toggle);
     toggleVID.changed(toggle);
     toggleFOT.changed(toggle);
+    toggleTEA.changed(toggle);
   }
 }
 
