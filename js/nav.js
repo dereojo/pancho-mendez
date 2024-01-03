@@ -156,16 +156,16 @@ function buildNotes(data) {
   
     switch (n.cat) {
       case "pintura":
-        n.color = color("blue");
-        n.colorOver = color("cyan");
+        n.color = color("#4800ff");
+        n.colorOver = color("#0793f6");
         break;
       case "arquitectura":
-        n.color = color("yellow");
-        n.colorOver = color("gold");
+        n.color = color("#ffea00");
+        n.colorOver = color("#ffe54f");
         break;
       case "dibujo":
-        n.color = color("SkyBlue");
-        n.colorOver = color("deepSkyBlue");
+        n.color = color("#2cc9f8");
+        n.colorOver = color("#56f2fd");
         break;
       case "video":
         n.color = color("deepPink");
@@ -176,8 +176,8 @@ function buildNotes(data) {
         n.colorOver = color("gray");
         break;
       case "teatro":
-        n.color = color("lime");
-        n.colorOver = color("greenyellow");
+        n.color = color("#a6ff00");
+        n.colorOver = color("#ceff2f");
         break;
     }
     notes.push(n);
